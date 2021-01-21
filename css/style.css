@@ -92,6 +92,10 @@ p {
 
 .header {
   position: absolute;
+  /* top: 0;
+  left: 50%;
+  transition: translate (-50%, 0); */
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -119,6 +123,7 @@ p {
   line-height: 1.333;
   letter-spacing: 0.1em;
   color: #ffffff;
+  transition-duration: 250ms;
 }
 
 .header .link:hover,
@@ -128,6 +133,8 @@ p {
 
 .logo {
   margin-right: 70px;
+  animation-duration: 500ms;
+  animation-iteration-count: 4;
 }
 
 .header .address {
@@ -147,6 +154,10 @@ p {
   color: #ffffff;
 }
 
+.button {
+  margin-right: 55px;
+}
+
 .modal-open-btn {
   min-width: 160px;
   height: 40px;
@@ -163,18 +174,22 @@ p {
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
+
+  transition-duration: 250ms;
 }
 
 .modal-open-btn:hover,
 .modal-open-btn:focus {
   background-color: #ff6c00;
+  cursor: pointer;
 }
 
 /*=== /Шапка сайта ===*/
 
 /*=== Баннер ===*/
 .top {
-  background-color: blue;
+  /* position: relative; */
+  /* background-color: blue; */
 }
 
 .top .container {
@@ -182,21 +197,32 @@ p {
 }
 
 .top-left {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: flex-end;
   width: 100px;
+  height: 680px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+  padding-left: 27px;
+  padding-bottom: 40px;
 
   color: #303030;
+
+  /* transform: rotateZ(-90deg); */
 }
 
 .top-left .networks-list {
   display: flex;
+  align-items: center;
+  /* justify-content: start; */
 
-  transform: rotateZ(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .top-left .networks-list .social-network:not(last-child) {
@@ -204,10 +230,15 @@ p {
 }
 
 .networks-list::before {
+  /* position: absolute; */
   display: block;
   content: "";
   width: 60px;
   height: 1px;
+  left: 0;
+  top: 0;
+  flex-shrink: 0;
+  margin-right: 40px;
   background-color: #303030;
 }
 
@@ -217,6 +248,14 @@ p {
   padding-right: 525;
   padding-bottom: 206px;
   padding-left: 100px;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/Slider-1.jpg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  width: 1125px;
 }
 
 /* .top-left .link {
@@ -229,6 +268,7 @@ p {
 .networks-list .social-network:hover,
 .networks-list .social-network:focus {
   color: #ff6c00;
+  transition-duration: 250ms;
 }
 
 /*=== /Баннер ===*/
