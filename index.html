@@ -20,22 +20,24 @@
     <header class="header">
       <div class="container">
         <nav class="menu">
-          <a href="#" class="logo" aria-label="Логотип">
+          <a href="#" class="logo link" aria-label="Логотип">
             <img src="./img/Logo.svg" alt="Логотип - Барбершоп" />
           </a>
-          <ul class="list-no-style">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги и цены</a></li>
-            <li><a href="#">Мастера</a></li>
-            <li><a href="#">Контакты</a></li>
+          <ul class="list menu-list">
+            <li class="menu-link"><a class="link" href="#">О нас</a></li>
+            <li class="menu-link">
+              <a class="link" href="#">Услуги и цены</a>
+            </li>
+            <li class="menu-link"><a class="link" href="#">Мастера</a></li>
+            <li class="menu-link"><a class="link" href="#">Контакты</a></li>
           </ul>
         </nav>
         <address class="address">
-          <a href="tel:+38-044-111-11-11">+38 044 111 11 11</a>
+          <a class="link telephone" href="tel:+38-044-111-11-11"
+            >+38 044 111 11 11</a
+          >
         </address>
-        <button class="modal-open-btn modal-open-btn-light">
-          онлайн-запись
-        </button>
+        <button class="modal-open-btn">онлайн-запись</button>
       </div>
     </header>
     <!-- /Шапка сайта -->
@@ -44,11 +46,25 @@
       <section class="top">
         <div class="container">
           <div class="top-left">
-            <ul class="list-no-style">
+            <ul class="list networks-list">
               <li>
-                <a href="#" aria-label="Инстаграм" lang="en">Instagram</a>
+                <a
+                  class="link social-network"
+                  href="#"
+                  aria-label="Инстаграм"
+                  lang="en"
+                  >Instagram</a
+                >
               </li>
-              <li><a href="#" aria-label="Ютуб" lang="en">Youtube</a></li>
+              <li>
+                <a
+                  class="link social-network"
+                  href="#"
+                  aria-label="Ютуб"
+                  lang="en"
+                  >Youtube</a
+                >
+              </li>
             </ul>
           </div>
           <div class="top-right">

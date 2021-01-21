@@ -20,6 +20,10 @@
 }
 
 /*=== /Общие ===*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: var(--main-font-family);
@@ -27,8 +31,12 @@ body {
   font-weight: 600;
 }
 
-a {
+.link {
   text-decoration: none;
+}
+
+.list {
+  list-style: none;
 }
 
 h1 {
@@ -57,16 +65,6 @@ p {
   color: #555555;
 }
 
-.address {
-  font-style: normal;
-}
-
-.list-no-style {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -74,11 +72,26 @@ p {
   margin: 0 auto;
 }
 
+.address {
+  font-style: normal;
+}
+
 .section {
   padding: 130px 0;
 }
 
+.modal-open-btn-light {
+  color: #ffffff;
+}
+
+.modal-open-btn-dark {
+  color: #303030;
+}
+
+/*=== Шапка сайта ===*/
+
 .header {
+  position: absolute;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -87,30 +100,32 @@ p {
   display: flex;
   align-items: center;
 }
+
 .header .menu {
   display: flex;
   align-items: center;
 }
 
-.header ul {
+.header .menu-list {
   display: flex;
 }
 
-.header ul li:not(last-child) {
+.menu-list .menu-link:not(last-child) {
   margin-right: 40px;
 }
 
-.header a,
-.header a:visited {
+.header .link {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
+  color: #ffffff;
 }
 
-.header a:hover,
-.header a:focus {
+.header .link:hover,
+.header .link:focus {
   color: #ff6c00;
 }
+
 .logo {
   margin-right: 70px;
 }
@@ -118,6 +133,18 @@ p {
 .header .address {
   margin-left: auto;
   margin-right: 50px;
+}
+
+.telephone {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .modal-open-btn {
@@ -135,16 +162,17 @@ p {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+  background-color: transparent;
 }
 
-.modal-open-btn-light {
-  color: #ffffff;
+.modal-open-btn:hover,
+.modal-open-btn:focus {
+  background-color: #ff6c00;
 }
 
-.modal-open-btn-dark {
-  color: #303030;
-}
+/*=== /Шапка сайта ===*/
 
+/*=== Баннер ===*/
 .top {
   background-color: blue;
 }
@@ -155,14 +183,32 @@ p {
 
 .top-left {
   width: 100px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #303030;
 }
 
-.top-left ul {
+.top-left .networks-list {
   display: flex;
+
+  transform: rotateZ(-90deg);
 }
 
-.top-left ul li:not(last-child) {
+.top-left .networks-list .social-network:not(last-child) {
   margin-right: 40px;
+}
+
+.networks-list::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 
 .top-right {
@@ -173,17 +219,19 @@ p {
   padding-left: 100px;
 }
 
-.top-left a,
-.top-left a:visited {
+/* .top-left .link {
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: #303030;
-}
+} */
 
-.top-left a:hover {
+.networks-list .social-network:hover,
+.networks-list .social-network:focus {
   color: #ff6c00;
 }
+
+/*=== /Баннер ===*/
 
 .subtitle {
   margin-bottom: 20px;
