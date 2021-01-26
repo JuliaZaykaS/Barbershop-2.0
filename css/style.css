@@ -57,6 +57,10 @@ body {
   margin-bottom: 20px;
 }
 
+.title-light {
+  color: #ffffff;
+}
+
 p {
   margin: 0;
   font-weight: normal;
@@ -382,5 +386,34 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
+
+.service-prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  padding: 30px 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.price-item {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 585px;
+  margin-bottom: 20px;
+}
+
 /*=== /Услуги и цены===*/ ;
