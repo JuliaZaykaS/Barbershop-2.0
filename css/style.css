@@ -51,6 +51,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #303030;
+  text-align: left;
 }
 
 .title-dark {
@@ -58,6 +59,7 @@ body {
 }
 
 .title-light {
+  margin-bottom: 44px;
   color: #ffffff;
 }
 
@@ -409,6 +411,22 @@ p {
   color: #9da4bd;
 }
 
+.price-list-left {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.price-list-right {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
+
 .price-item {
   display: flex;
   /* justify-content: space-between; */
@@ -416,4 +434,79 @@ p {
   margin-bottom: 20px;
 }
 
-/*=== /Услуги и цены===*/ ;
+/*=== /Услуги и цены===*/
+
+/*=== Преимущества ===*/
+.advantages {
+  display: flex;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 24px;
+  /* margin-bottom: 30px; */
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+}
+
+.advantage-item:not(:nth-child(2)) {
+  margin-right: 30px;
+}
+
+.advantage-item:not(:nth-child(2)) {
+  margin-bottom: 30px;
+}
+
+/* .advantage-item:nth-child(3n + 1) {
+  margin-bottom: 30px;
+} */
+
+.advantage-item:nth-child(2n + 2) {
+  margin-top: 30px;
+}
+
+.statistic-number {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.statistic-more {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ff6c00;
+}
+
+.statistic-description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: #303030;
+}
+
+.advantages-description {
+  margin-left: 130px;
+}
+
+/*=== /Преимущества===*/
