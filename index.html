@@ -41,7 +41,9 @@
             >+38 044 111 11 11</a
           >
         </address>
-        <button class="button modal-open-btn">онлайн-запись</button>
+        <button type="button" class="button modal-open-btn" data-modal-open>
+          онлайн-запись
+        </button>
       </div>
     </header>
     <!-- /Шапка сайта -->
@@ -342,5 +344,18 @@
         <li><a href="#" aria-label="Ютуб" lang="en">Youtube</a></li>
       </ul>
     </footer>
+
+    /*=== Модалка ===*/
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-button" data-modal-close>
+          <img class="icon" src="./img/close-btn.svg" alt="Закрыть" />
+          <!-- <svg width="11" height="11" class="icon">
+            <use href="./img/close-btn.svg"></use>
+          </svg> -->
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
