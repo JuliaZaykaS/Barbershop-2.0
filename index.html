@@ -311,28 +311,57 @@
       </section>
       <!-- /Галерея -->
       <!-- Контакты -->
-      <section class="section">
-        <div>
-          <h2>Контакты</h2>
-          <ul class="list-no-style">
-            <li>
-              <address class="address">
-                <a href="">ул. Васильковая, 7А Киев, 08132</a>
-              </address>
-            </li>
-            <li>
-              <address class="address">
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-              </address>
-            </li>
-            <li>
-              <address class="address">
-                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-              </address>
-            </li>
-          </ul>
-          <p>время работы</p>
-          <p>Ежедневно с 9:00 до 22:00</p>
+      <section class="section contacts">
+        <div class="container">
+          <div class="contacts-left">
+            <h2 class="title title-light">Онлайн-запись</h2>
+            <form action="" class="form">
+              <input
+                type="text"
+                class="form-input form-input-name"
+                name="user-name"
+                placeholder="Имя*"
+                required
+                pattern="[А-яа-я]{2,}"
+              />
+              <input
+                type="tel"
+                class="form-input form-input-tel"
+                name="user-tel"
+                placeholder="Телефон*"
+                required
+                pattern="\+[0-9]{11}"
+              />
+              <textarea
+                name="user"
+                class="form-comment"
+                placeholder="сообщение"
+              ></textarea>
+              <button type="button" class="form-submit-btn">отправить</button>
+            </form>
+          </div>
+          <div class="contacts-right">
+            <h2 class="title title-light">Контакты</h2>
+            <ul class="list">
+              <li>
+                <address class="address">
+                  <a href="">ул. Васильковая, 7А Киев, 08132</a>
+                </address>
+              </li>
+              <li>
+                <address class="address">
+                  <a href="tel:+380441111111">+38 044 111 11 11</a>
+                </address>
+              </li>
+              <li>
+                <address class="address">
+                  <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+                </address>
+              </li>
+            </ul>
+            <p>время работы</p>
+            <p>Ежедневно с 9:00 до 22:00</p>
+          </div>
         </div>
       </section>
       <!-- /Контакты -->
@@ -346,7 +375,7 @@
     </footer>
 
     /*=== Модалка ===*/
-    <div class="modal-backdrop is-hidden" data-modal>
+    <div class="modal-backdrop" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-button" data-modal-close>
           <img class="icon" src="./img/close-btn.svg" alt="Закрыть" />
@@ -354,6 +383,55 @@
             <use href="./img/close-btn.svg"></use>
           </svg> -->
         </button>
+        <h3>Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="modal-form">
+          <label class="modal-form-label-name">
+            Имя*
+            <span class="input-wrapper">
+              <input
+                type="text"
+                name="name"
+                required
+                class="modal-form-input"
+              />
+            </span>
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="tel" required class="modal-form-input" />
+          </label>
+          <label>
+            Почта
+            <input
+              type="email"
+              name="email"
+              required
+              class="modal-form-input"
+            />
+          </label>
+          <label>
+            Комментарий
+            <textarea
+              class="modal-form-comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="label-checkbox">
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              name="contract"
+              value="accept"
+              required
+            />
+            <span class="checkbox-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#"> Условия договора</a></span
+            >
+          </label>
+          <button type="submit" class="modal-form-submit-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

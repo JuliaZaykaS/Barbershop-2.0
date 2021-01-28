@@ -186,7 +186,8 @@ p {
   margin-right: 55px;
 }
 
-.modal-open-btn {
+.modal-open-btn,
+.form-submit-btn {
   min-width: 160px;
   height: 40px;
   padding: 12px 20px;
@@ -206,7 +207,8 @@ p {
   transition-duration: 250ms;
 }
 
-.modal-open-btn-light {
+.modal-open-btn-light,
+.form-submit-btn {
   color: #ffffff;
 }
 
@@ -220,7 +222,9 @@ p {
 }
 
 .modal-open-btn:hover,
-.modal-open-btn:focus {
+.modal-open-btn:focus,
+.form-submit-btn:hover,
+.form-submit-btn:focus {
   background-color: #ff6c00;
   cursor: pointer;
 }
@@ -515,6 +519,88 @@ p {
 
 /*=== /Преимущества===*/
 
+/*=== Контаткты ===*/
+
+.contacts .container {
+  display: flex;
+  background-color: #191c26;
+}
+.contacts-left {
+  width: 50%;
+  background-color: #191c26;
+  display: flex;
+  padding-right: 40px;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.contacts-left .form {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-comment {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-input:focus,
+.form-comment:focus {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-input::placeholder,
+.form-comment::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+}
+
+.form-input:focus::placeholder,
+.form-comment:focus::placeholder {
+  color: #ffffff;
+}
+
+.form-input-name,
+.form-input-tel {
+  /* display: block; */
+  width: 50%;
+}
+
+.form-comment {
+  width: 100%;
+  margin: 44px 0;
+  resize: none;
+  height: 90px;
+}
+
+.contacts-right {
+  width: 50%;
+  padding: 130px 100px;
+  background-image: url(../img/Bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*=== /Контакты===*/
+
 /*=== Модалка ===*/
 .modal-backdrop {
   position: fixed;
@@ -536,7 +622,7 @@ p {
   transform: scale(1) translate(-50%, -50%);
   transition: transform var(--animation-time) var(--timing-function);
 
-  z-index: ;
+  /* z-index: ; */
   width: 528px;
   height: 581px;
   background-color: #ffffff;
@@ -577,6 +663,88 @@ p {
 
 .modal-backdrop.is-hidden .modal-window {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.modal-form-input,
+.modal-form-comment {
+  display: block;
+  width: 100%;
+}
+
+.modal-form label {
+  margin-bottom: 4px;
+}
+
+.modal-form-submit-btn {
+  align-self: center;
+  padding: 10px 55px;
+  cursor: pointer;
+  transform: opacity 250ms linear;
+}
+
+.modal-form-submit-btn:hover {
+  opacity: 0.8;
+}
+
+.label-checkbox {
+  /* display: flex; */
+}
+
+.input-wrapper {
+  position: relative;
+  display: block;
+}
+
+/* .input-wrapper::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.input-wrapper:hover::before {
+  fill: blue;
+}
+
+.modal-form-label-name .input-wrapper::before {
+  background-image: url(../img/person-black-18dp\ 1.svg);
+} */
+
+.label-checkbox {
+  position: relative;
+  padding-left: 10px;
+}
+
+.checkbox-text::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #000000;
+  background-origin: padding-box;
+}
+
+.modal-checkbox:checked + .checkbox-text::before {
+  background-color: blue;
+  border: 4px solid #ffffff;
+}
+
+.modal-checkbox {
+  appearance: none;
 }
 
 /*=== /Модалка ===*/
