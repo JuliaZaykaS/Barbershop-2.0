@@ -109,9 +109,8 @@
           </div>
           <div>
             <p class="subtitle">О нас</p>
-            <h2 class="title title-dark">
-              Лучший Барбершоп <br />
-              твоего города
+            <h2 class="title title-dark mb-title-right">
+              Лучший Барбершоп твоего города
             </h2>
             <p class="description description-dark">
               Если ты хочешь добавить в свой образ больше уверенности – тебе
@@ -137,7 +136,7 @@
           <p class="subtitle subtitle-light">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="title title-light">Услуги и цены</h2>
+          <h2 class="title title-light mb-title-left">Услуги и цены</h2>
           <div class="service-prices">
             <ul class="list price-list price-list-left">
               <li class="price-item">
@@ -179,27 +178,27 @@
       <section class="section">
         <div class="container">
           <div class="advantages">
-            <div>
-              <ul class="list advantage-list">
-                <li class="advantage-item">
+            <div class="statistics">
+              <ul class="list statistic-list">
+                <li class="statistic-item">
                   <p class="statistic-number">
                     600<sup class="statistic-more">+</sup>
                   </p>
                   <p class="statistic-description">Довольных клиентов в день</p>
                 </li>
-                <li class="advantage-item">
+                <li class="statistic-item">
                   <p class="statistic-number">
                     50<sup class="statistic-more">+</sup>
                   </p>
                   <p class="statistic-description">Наград за отличный сервис</p>
                 </li>
-                <li class="advantage-item">
+                <li class="statistic-item">
                   <p class="statistic-number">
                     20<sup class="statistic-more">+</sup>
                   </p>
                   <p class="statistic-description">Лучших мастеров Киева</p>
                 </li>
-                <li class="advantage-item">
+                <li class="statistic-item">
                   <p class="statistic-number">
                     100<sup class="statistic-more">+</sup>
                   </p>
@@ -211,7 +210,9 @@
             </div>
             <div class="advantages-description">
               <p class="subtitle subtitle-dark">старая традиционная школа</p>
-              <h2 class="title title-dark">Почему приходят именно к нам?</h2>
+              <h2 class="title title-dark mb-title-right">
+                Почему приходят именно к нам?
+              </h2>
               <p class="description description-dark">
                 О нас говорят только хорошее. Но лучше 1 раз увидеть и
                 прочувствовать, чем 10 раз прочитать.
@@ -223,91 +224,182 @@
 
       <!-- /Преимущества -->
       <!-- Наши мастера -->
-      <section class="section">
-        <p class="subtitle subtitle-dark">для настоящих ценителей атмосферы</p>
-        <h2 class="title title-dark">Наши мастера</h2>
-        <ul class="list-no-style">
-          <li>
-            <img
-              src="./img/master1.jpg"
-              alt="John Smith"
-              width="370"
-              height="346"
-            />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-            <ul class="list-no-style">
-              <li><a href="" aria-label="иконка Инстаграм"></a></li>
-              <li><a href="" aria-label="иконка Твиттер"></a></li>
-              <li><a href="" aria-label="иконка Фейсбук"></a></li>
-              <li><a href="" aria-label="иконка ЛинкедИн"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./img/master2.jpg"
-              alt="Michele Doe"
-              width="370"
-              height="346"
-            />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-            <ul class="list-no-style">
-              <li><a href="" aria-label="иконка Инстаграм"></a></li>
-              <li><a href="" aria-label="иконка Твиттер"></a></li>
-              <li><a href="" aria-label="иконка Фейсбук"></a></li>
-              <li><a href="" aria-label="иконка ЛинкедИн"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./img/master3.jpg"
-              alt="Alan Black"
-              width="370"
-              height="346"
-            />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-            <ul class="list-no-style">
-              <li><a href="" aria-label="иконка Инстаграм"></a></li>
-              <li><a href="" aria-label="иконка Твиттер"></a></li>
-              <li><a href="" aria-label="иконка Фейсбук"></a></li>
-              <li><a href="" aria-label="иконка ЛинкедИн"></a></li>
-            </ul>
-          </li>
-        </ul>
+      <section class="section our-masters">
+        <div class="container">
+          <p class="subtitle subtitle-dark">
+            для настоящих ценителей атмосферы
+          </p>
+          <h2 class="title title-dark mb-title-left">Наши мастера</h2>
+          <ul class="list masters-list">
+            <li class="master-card">
+              <img
+                class="master-foto"
+                src="./img/master1.jpg"
+                alt="John Smith"
+                width="370"
+                height="346"
+              />
+              <h3 class="master-name">John Smith</h3>
+              <p class="master-specialization">Extreme Barber</p>
+              <ul class="list social-network-list">
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Инстаграм">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Твиттер">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Фейсбук">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка ЛинкедИн">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="master-card">
+              <img
+                class="master-foto"
+                src="./img/master2.jpg"
+                alt="Michele Doe"
+                width="370"
+                height="346"
+              />
+              <h3 class="master-name">Michele Doe</h3>
+              <p class="master-specialization">Extreme Barber</p>
+              <ul class="list social-network-list">
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Инстаграм">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Твиттер">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Фейсбук">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка ЛинкедИн">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="master-card">
+              <img
+                class="master-foto"
+                src="./img/master3.jpg"
+                alt="Alan Black"
+                width="370"
+                height="346"
+              />
+              <h3 class="master-name">Alan Black</h3>
+              <p class="master-specialization">Extreme Barber</p>
+              <ul class="list social-network-list">
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Инстаграм">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Твиттер">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка Фейсбук">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-network-link">
+                  <a class="link" href="#" aria-label="иконка ЛинкедИн">
+                    <svg class="icon social-icon" width="20" height="20">
+                      <use href="./img/sprite-icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- /Наши мастера -->
       <!-- Галерея -->
       <section class="section">
-        <h2 hidden>Галерея</h2>
-        <p class="subtitle subtitle-dark">
-          На латинском языке “барба” означает “борода”
-        </p>
-        <ul class="list-no-style">
-          <li>
-            <img
-              src="./img/foto1.jpg"
-              alt="мужская стрижка"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img src="./img/foto2.jpg" alt="бритье" width="270" height="360" />
-          </li>
-          <li>
-            <img
-              src="./img/foto3.jpg"
-              alt="распаривание перед бритьем"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img src="./img/foto4.jpg" alt="бритье" width="270" height="360" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 hidden>Галерея</h2>
+          <p class="subtitle subtitle-dark mb-title-left">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <ul class="list gallery-fotos">
+            <li class="gallery-foto">
+              <img
+                src="./img/foto1.jpg"
+                alt="мужская стрижка"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-foto">
+              <img
+                src="./img/foto2.jpg"
+                alt="бритье"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-foto">
+              <img
+                src="./img/foto3.jpg"
+                alt="распаривание перед бритьем"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-foto">
+              <img
+                src="./img/foto4.jpg"
+                alt="бритье"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- /Галерея -->
       <!-- Контакты -->
@@ -368,14 +460,14 @@
     </main>
     <footer>
       <p>&copy;Copyright 2020</p>
-      <ul class="list-no-style">
+      <ul class="list">
         <li><a href="#" aria-label="Инстаграм" lang="en">Instagram</a></li>
         <li><a href="#" aria-label="Ютуб" lang="en">Youtube</a></li>
       </ul>
     </footer>
 
-    /*=== Модалка ===*/
-    <div class="modal-backdrop" data-modal>
+    <!-- Модалка -->
+    <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-button" data-modal-close>
           <img class="icon" src="./img/close-btn.svg" alt="Закрыть" />

@@ -38,11 +38,20 @@ body {
 
 .link {
   text-decoration: none;
+  color: inherit;
   /* color: inherit; */
 }
 
 .list {
   list-style: none;
+}
+
+.mb-title-left {
+  margin-bottom: 44px;
+}
+
+.mb-title-right {
+  margin-bottom: 20px;
 }
 
 .title {
@@ -67,14 +76,14 @@ body {
   color: #ffffff;
 }
 
-p {
+/* p {
   margin: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.87;
   letter-spacing: 0.02em;
   color: #555555;
-}
+} */
 
 .container {
   width: 1200px;
@@ -345,7 +354,7 @@ p {
 }
 
 .description-dark {
-  color: #303030;
+  columns: #555555;
   margin-bottom: 20px;
 }
 
@@ -365,6 +374,10 @@ p {
 
 .about .container {
   display: flex;
+}
+
+.images {
+  margin-right: 64px;
 }
 
 .images-list {
@@ -402,9 +415,12 @@ p {
 .service-prices {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .price-list {
+  width: 50%;
+
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
@@ -449,12 +465,16 @@ p {
   display: flex;
 }
 
-.advantage-list {
+.statistics {
+  margin-right: 130px;
+}
+
+.statistic-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.advantage-item {
+.statistic-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -465,11 +485,11 @@ p {
   background-color: #f7f7f7;
 }
 
-.advantage-item:not(:nth-child(2)) {
+.statistic-item:not(:nth-child(2)) {
   margin-right: 30px;
 }
 
-.advantage-item:not(:nth-child(2)) {
+.statistic-item:not(:nth-child(2)) {
   margin-bottom: 30px;
 }
 
@@ -477,7 +497,7 @@ p {
   margin-bottom: 30px;
 } */
 
-.advantage-item:nth-child(2n + 2) {
+.statistic-item:nth-child(2n + 2) {
   margin-top: 30px;
 }
 
@@ -518,6 +538,84 @@ p {
 }
 
 /*=== /Преимущества===*/
+
+/*=== Наши мастера ===*/
+.our-masters {
+  background-color: #f7f7f7;
+}
+.masters-list {
+  display: flex;
+}
+
+.master-card:not(last-child) {
+  margin-right: 30px;
+}
+
+.master-foto {
+  margin-bottom: 30px;
+}
+
+.master-name {
+  margin-bottom: 8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #303030;
+}
+
+.master-specialization {
+  margin-bottom: 30px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ff6c00;
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: center;
+  color: #303030;
+}
+
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-network-link:not(last-child) {
+  margin-right: 10px;
+}
+
+.social-network-link:hover .social-icon,
+.social-network-link:focus .social-icon {
+  fill: #ff6c00;
+}
+
+/*=== /Наши мастера ===*/
+
+/*=== Галерея ===*/
+.gallery-fotos {
+  display: flex;
+}
+
+.gallery-foto:not(las-child) {
+  margin-right: 30px;
+}
+/*=== /Галерея ===*/
 
 /*=== Контаткты ===*/
 
