@@ -1,0 +1,28 @@
+.button {
+  margin-right: 55px;
+}
+
+.modal-open-btn {
+  min-width: 160px;
+  height: 40px;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    background-color: #ff6c00;
+    cursor: pointer;
+  }
+}

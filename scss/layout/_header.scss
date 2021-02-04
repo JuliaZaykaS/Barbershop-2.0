@@ -1,0 +1,56 @@
+.header {
+  position: absolute;
+  /* top: 0;
+  left: 50%;
+  transition: translate (-50%, 0); */
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu-list {
+  display: flex;
+}
+
+.menu-list .menu-link:not(last-child) {
+  margin-right: 40px;
+}
+
+.header .link {
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.telephone {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

@@ -1,0 +1,27 @@
+.about .container {
+  display: flex;
+}
+
+.images {
+  margin-right: 64px;
+}
+
+.images-list {
+  display: flex;
+  & .image:not(last-child) {
+    margin-right: 30px;
+  }
+}
+
+.description-about-us {
+  margin-bottom: 40px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}

@@ -1,0 +1,7 @@
+.gallery-fotos {
+  display: flex;
+}
+
+.gallery-foto:not(las-child) {
+  margin-right: 30px;
+}

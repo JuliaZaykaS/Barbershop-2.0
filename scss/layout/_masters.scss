@@ -1,0 +1,41 @@
+.our-masters {
+  background-color: #f7f7f7;
+}
+
+.masters-list {
+  display: flex;
+}
+
+.master-card:not(last-child) {
+  margin-right: 30px;
+}
+
+.master-foto {
+  margin-bottom: 30px;
+}
+
+.master-name {
+  margin-bottom: 8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #303030;
+}
+
+.master-specialization {
+  margin-bottom: 30px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ff6c00;
+}

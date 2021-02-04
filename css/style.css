@@ -14,7 +14,7 @@
 
   /* Шрифты */
 
-  --main-font-family: -- "Open Sans", sans-serif;
+  --main-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
   /* Палитра */
 }
@@ -276,7 +276,8 @@ body {
   transform-origin: left top;
 }
 
-.top-left .networks-list .social-network:not(last-child) {
+.top-left .networks-list .social-network:not(last-child),
+.footer-networks-list .social-network:not(last-child) {
   margin-right: 40px;
 }
 
@@ -284,7 +285,8 @@ body {
   color: inherit;
 }
 
-.networks-list::before {
+.networks-list::before,
+.footer-networks-list::before {
   display: block;
   content: "";
   width: 60px;
@@ -698,6 +700,30 @@ body {
   background-size: cover;
 }
 /*=== /Контакты===*/
+
+/*=== Футер ===*/
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px;
+}
+
+.footer-networks-list {
+  display: flex;
+  align-items: flex-end;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  padding-left: 27px;
+  padding-bottom: 40px;
+
+  color: #303030;
+}
+/*=== /Футер ===*/
 
 /*=== Модалка ===*/
 .modal-backdrop {

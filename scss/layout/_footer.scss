@@ -1,0 +1,21 @@
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px;
+}
+
+.footer-networks-list {
+  display: flex;
+  align-items: flex-end;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  padding-left: 27px;
+  padding-bottom: 40px;
+
+  color: #303030;
+}

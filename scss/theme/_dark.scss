@@ -1,0 +1,16 @@
+.title-dark {
+  margin-bottom: 20px;
+}
+
+.description-dark {
+  columns: #555555;
+  margin-bottom: 20px;
+}
+
+.modal-open-btn-dark {
+  color: #303030;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+}

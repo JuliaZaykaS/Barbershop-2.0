@@ -1,0 +1,78 @@
+.contacts .container {
+  display: flex;
+  background-color: #191c26;
+}
+.contacts-left {
+  width: 50%;
+  background-color: #191c26;
+  display: flex;
+  padding-right: 40px;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  & .form {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-comment {
+  background: none;
+  border: none;
+  padding: 8px 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-input:focus,
+.form-comment:focus {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-input::placeholder,
+.form-comment::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+}
+
+.form-input:focus::placeholder,
+.form-comment:focus::placeholder {
+  color: #ffffff;
+}
+
+.form-input-name,
+.form-input-tel {
+  /* display: block; */
+  width: 50%;
+}
+
+.form-comment {
+  width: 100%;
+  margin: 44px 0;
+  resize: none;
+  height: 90px;
+}
+
+.contacts-right {
+  width: 50%;
+  padding: 130px 100px;
+  background-image: url(../img/Bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
