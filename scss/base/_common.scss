@@ -43,10 +43,14 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 31px;
+  width: 480px;
   margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .address {
@@ -90,7 +94,17 @@ body {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 1.667;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
+
+  color: #9da4bd;
+  @media screen and (min-width: 1200px) {
+    // font-family: Open Sans;
+    // font-style: normal;
+    // font-weight: normal;
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+  }
 }
