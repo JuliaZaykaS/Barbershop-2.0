@@ -2,4 +2,9 @@
   margin-right: 70px;
   animation-duration: 500ms;
   animation-iteration-count: 4;
+  &-inverse {
+    @media screen and (max-width: 767px) {
+      fill: #ffffff;
+    }
+  }
 }

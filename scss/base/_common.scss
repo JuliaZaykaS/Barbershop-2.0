@@ -10,6 +10,12 @@ body {
   color: #555555;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .icon {
   fill: currentColor;
 }
@@ -43,15 +49,36 @@ body {
 }
 
 .container {
-  padding: 0 31px;
-  width: 480px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 31px;
+  padding-right: 31px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    width: 100%;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1200px;
+    width: 100%;
   }
 }
+// .container {
+//   padding: 0 31px;
+//   width: 480px;
+//   margin: 0 auto;
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//   }
+// }
 
 .address {
   font-style: normal;
@@ -87,6 +114,11 @@ body {
     margin-right: 20px;
     background-color: #303030;
     /* flex-shrink: 0; */
+  }
+  &-mobile-line-break {
+    @media screen and (max-width: 767px) {
+      line-height: 1.91;
+    }
   }
 }
 

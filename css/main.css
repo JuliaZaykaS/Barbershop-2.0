@@ -12,6 +12,12 @@ body {
   color: #555555;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .icon {
   fill: currentColor;
 }
@@ -45,16 +51,32 @@ body {
 }
 
 .container {
-  padding: 0 31px;
-  width: 480px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1200px;
+    width: 100%;
   }
 }
 
@@ -97,6 +119,12 @@ body {
   /* flex-shrink: 0; */
 }
 
+@media screen and (max-width: 767px) {
+  .subtitle-mobile-line-break {
+    line-height: 1.91;
+  }
+}
+
 .description {
   font-family: Open Sans;
   font-style: normal;
@@ -116,15 +144,6 @@ body {
 }
 
 .button {
-  margin-right: 55px;
-}
-
-.modal-open-btn {
-  min-width: 160px;
-  height: 40px;
-  padding: 12px 20px;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -134,13 +153,35 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  padding: 12px 20px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-open-btn:hover, .modal-open-btn:focus {
+.button:hover, .button:focus {
   background-color: #ff6c00;
   cursor: pointer;
+}
+
+.button-primary {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  min-width: 160px;
+  height: 40px;
+}
+
+.button-round {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  color: #303030;
+  background-color: #ffffff;
+}
+
+.button-round:hover, .button-round:focus {
+  color: #ff6c00;
+  background-color: #ffffff;
 }
 
 .form {
@@ -523,6 +564,12 @@ body {
           animation-iteration-count: 4;
 }
 
+@media screen and (max-width: 767px) {
+  .logo-inverse {
+    fill: #ffffff;
+  }
+}
+
 .header {
   position: absolute;
   /* top: 0;
@@ -839,21 +886,38 @@ body {
   background-color: #f7f7f7;
 }
 
-.masters-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .masters-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.master-card:not(last-child) {
-  margin-right: 30px;
+.master-card {
+  margin-bottom: 64px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-.master-foto {
+@media screen and (min-width: 1200px) {
+  .master-card {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.master-card .master-foto {
   margin-bottom: 30px;
 }
 
-.master-name {
+.master-card .master-name {
   margin-bottom: 8px;
   font-family: Open Sans;
   font-style: normal;
@@ -865,7 +929,7 @@ body {
   color: #303030;
 }
 
-.master-specialization {
+.master-card .master-specialization {
   margin-bottom: 30px;
   font-family: Open Sans;
   font-style: normal;
@@ -877,14 +941,37 @@ body {
   color: #ff6c00;
 }
 
-.gallery-fotos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .gallery-fotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.gallery-foto:not(las-child) {
-  margin-right: 30px;
+.gallery-foto {
+  margin-bottom: 30px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-foto {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-foto {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .contacts {
