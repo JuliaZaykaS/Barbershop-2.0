@@ -46,6 +46,18 @@ img {
   letter-spacing: 0.05em;
   color: #303030;
   text-align: left;
+  &-tablet {
+    @media screen and (max-width: 767px) {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      letter-spacing: 0.05em;
+
+      color: #303030;
+    }
+  }
 }
 
 .container {
@@ -86,7 +98,13 @@ img {
 }
 
 .section {
-  padding: 130px 0;
+  padding: 84px 0;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 130px 0;
+  }
 }
 
 .subtitle {

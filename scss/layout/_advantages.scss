@@ -1,9 +1,19 @@
 .advantages {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .statistics {
-  margin-right: 130px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+    // justify-self: flex-end;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 130px;
+  // }
 }
 
 .statistic-list {
@@ -16,8 +26,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 24px;
-  /* margin-bottom: 30px; */
-  width: 170px;
+
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  // width: 170px;
   height: 133px;
   background-color: #f7f7f7;
 
@@ -34,6 +45,7 @@
 }
 
 .statistic-number {
+  position: relative;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -46,6 +58,8 @@
 }
 
 .statistic-more {
+  position: absolute;
+  top: 5px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -66,5 +80,17 @@
 }
 
 .advantages-description {
-  margin-left: 130px;
+  margin-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    // margin-l: 240px;
+    // justify-self: flex-start;
+    // margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 130px;
+  // }
 }

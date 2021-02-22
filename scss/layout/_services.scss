@@ -8,18 +8,23 @@
 }
 
 .service-prices {
-  display: flex;
-  justify-content: space-between;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  padding: 30px;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding: 30px 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .price-list {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  width: 50%;
-
-  padding: 30px 40px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -28,19 +33,27 @@
   letter-spacing: 0.02em;
 
   color: #9da4bd;
-  &-left {
-    background-image: linear-gradient(
-      180deg,
-      #171a24 0%,
-      rgba(23, 26, 36, 0.2) 100%
-    );
-  }
-  &-right {
-    background-image: linear-gradient(
-      180deg,
-      #090b13 0%,
-      rgba(9, 11, 19, 0.2) 100%
-    );
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    padding: 30px 40px;
+    &-left {
+      background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
+    &-right {
+      background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
   }
 }
 
@@ -50,3 +63,18 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
+// .service-price::before {
+//   content: "";
+//   display: block;
+//   width: 100%;
+//   height: 1px;
+//   background-color: rgba(157, 164, 189, 0.12);
+// }
+
+// .line {
+//   display: block;
+//   width: 100%;
+//   height: 1px;
+//   background-color: rgba(157, 164, 189, 0.12);
+// }
