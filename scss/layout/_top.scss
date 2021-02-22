@@ -1,5 +1,7 @@
-.top .container {
-  // display: flex;
+.top-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .top-left {
@@ -26,15 +28,15 @@
 }
 
 .top-right {
-  @media screen and (max-width: 767px) {
-    background-image: linear-gradient(
-        rgba(25, 28, 38, 0.2),
-        rgba(25, 28, 38, 0.2)
-      ),
-      url(../../img/Slider-3-mobile.jpg);
-    background-repeat: no-repeat;
-    height: 580px;
-  }
+  // @media screen and (max-width: 767px) {
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../../img/Slider-3-mobile.jpg);
+  background-repeat: no-repeat;
+  height: 580px;
+  // }
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
     padding-top: 272px;
@@ -49,8 +51,6 @@
     background-repeat: no-repeat;
     width: 1125px;
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../../img/Slider-3@2x.jpg);
