@@ -24,31 +24,53 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
-        <nav class="menu">
-          <a
-            href="#"
-            class="logo logo-inverse link animate__pulse"
-            aria-label="Логотип"
-          >
-            <img src="./img/Logo.svg" alt="Логотип - Барбершоп" />
-          </a>
-          <ul class="list menu-list">
-            <li class="menu-link"><a class="link" href="#">О нас</a></li>
-            <li class="menu-link">
-              <a class="link" href="#">Услуги и цены</a>
+        <a
+          href="#"
+          class="logo logo-inverse link animate__pulse"
+          aria-label="Логотип"
+        >
+          <img src="./img/Logo.svg" alt="Логотип - Барбершоп" />
+        </a>
+        <div class="mobile-menu">
+          <nav class="menu">
+            <ul class="list menu-list">
+              <li class="menu-link"><a class="link" href="#">О нас</a></li>
+              <li class="menu-link">
+                <a class="link" href="#">Услуги и цены</a>
+              </li>
+              <li class="menu-link"><a class="link" href="#">Мастера</a></li>
+              <li class="menu-link"><a class="link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <address class="address">
+            <a class="link telephone" href="tel:+38-044-111-11-11"
+              >+38 044 111 11 11</a
+            >
+          </address>
+          <button type="button" class="button button-primary" data-modal-open>
+            онлайн-запись
+          </button>
+          <ul class="list networks-list mobile-network-list">
+            <li>
+              <a
+                class="link social-network"
+                href="#"
+                aria-label="Инстаграм"
+                lang="en"
+                >Instagram</a
+              >
             </li>
-            <li class="menu-link"><a class="link" href="#">Мастера</a></li>
-            <li class="menu-link"><a class="link" href="#">Контакты</a></li>
+            <li>
+              <a
+                class="link social-network"
+                href="#"
+                aria-label="Ютуб"
+                lang="en"
+                >Youtube</a
+              >
+            </li>
           </ul>
-        </nav>
-        <address class="address">
-          <a class="link telephone" href="tel:+38-044-111-11-11"
-            >+38 044 111 11 11</a
-          >
-        </address>
-        <button type="button" class="button button-primary" data-modal-open>
-          онлайн-запись
-        </button>
+        </div>
       </div>
     </header>
     <!-- /Шапка сайта -->
@@ -103,6 +125,7 @@
                   src="./img/about-us-1.jpg"
                   alt="Барбершоп бритье бороды"
                   srcset="./img/about-us-1.jpg 1x, ./img/about-us-1@2x.jpg 2x"
+                  sizes="(min-width: 768px) 330px 235px, (min-width: 1200px) 270px 445px"
                 />
               </li>
               <li class="image">

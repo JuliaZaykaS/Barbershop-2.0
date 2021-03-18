@@ -54,3 +54,10 @@
 
   color: #ffffff;
 }
+
+.mobile-menu .mobile-network-list {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
