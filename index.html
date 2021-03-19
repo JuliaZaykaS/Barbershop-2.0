@@ -31,7 +31,29 @@
         >
           <img src="./img/Logo.svg" alt="Логотип - Барбершоп" />
         </a>
-        <div class="mobile-menu">
+        <button
+          type="button"
+          class="btn menu-btn"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              href="./img/sprite-icons.svg#icon-close"
+              class="btn-close-menu"
+            ></use>
+            <use
+              href="./img/sprite-icons.svg#icon-menu"
+              class="btn-mobile-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
           <nav class="menu">
             <ul class="list menu-list">
               <li class="menu-link"><a class="link" href="#">О нас</a></li>
@@ -51,7 +73,7 @@
             онлайн-запись
           </button>
           <ul class="list networks-list mobile-network-list">
-            <li>
+            <li class="network-item">
               <a
                 class="link social-network"
                 href="#"
@@ -60,7 +82,7 @@
                 >Instagram</a
               >
             </li>
-            <li>
+            <li class="network-item">
               <a
                 class="link social-network"
                 href="#"
@@ -634,5 +656,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
