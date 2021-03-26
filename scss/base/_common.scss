@@ -58,6 +58,12 @@ img {
       color: #303030;
     }
   }
+  &-center {
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      text-align: start;
+    }
+  }
 }
 
 .container {
@@ -73,12 +79,14 @@ img {
   @media screen and (min-width: 768px) {
     max-width: 768px;
     width: 100%;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     width: 100%;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 // .container {

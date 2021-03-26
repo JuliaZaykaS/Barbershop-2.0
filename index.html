@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <a
           href="#"
@@ -94,7 +94,7 @@
           </ul>
         </div>
       </div>
-    </header>
+    </header> -->
     <!-- /Шапка сайта -->
     <main>
       <!-- Топ -->
@@ -503,77 +503,102 @@
         </div>
       </section>
       <!-- /Галерея -->
-      <!-- Контакты -->
-      <section class="section contacts">
-        <div class="container">
-          <div class="contacts-left">
-            <h2 class="title title-light">Онлайн-запись</h2>
-            <form action="" class="form">
-              <input
-                type="text"
-                class="form-input form-input-name"
-                name="user-name"
-                placeholder="Имя*"
-                required
-                pattern="[А-яа-я]{2,}"
-              />
-              <input
-                type="tel"
-                class="form-input form-input-tel"
-                name="user-tel"
-                placeholder="Телефон*"
-                required
-                pattern="\+[0-9]{11}"
-              />
-              <textarea
-                name="user"
-                class="form-comment"
-                placeholder="сообщение"
-              ></textarea>
-              <button type="button" class="button form-submit-btn">
-                отправить
-              </button>
-            </form>
+      <div class="contact-us">
+        <!-- Онлайн-запись -->
+        <section class="section booking">
+          <div class="container">
+            <div class="contacts-left">
+              <h2 class="title title-light title-center">Онлайн-запись</h2>
+              <form action="" class="form">
+                <div class="form-contacts">
+                  <input
+                    type="text"
+                    class="form-input form-input-name"
+                    name="user-name"
+                    placeholder="Имя*"
+                    required
+                    pattern="[А-яа-я]{2,}"
+                  />
+                  <input
+                    type="tel"
+                    class="form-input form-input-tel"
+                    name="user-tel"
+                    placeholder="Телефон*"
+                    required
+                    pattern="\+[0-9]{11}"
+                  />
+                </div>
+                <textarea
+                  name="user"
+                  class="form-input form-comment"
+                  placeholder="сообщение"
+                ></textarea>
+                <button
+                  type="button"
+                  class="button button-primary form-submit-btn"
+                >
+                  отправить
+                </button>
+              </form>
+            </div>
           </div>
-          <div class="contacts-right">
-            <h2 class="title title-light">Контакты</h2>
-            <ul class="list footer-contact-list">
-              <l class="footer-contact" i>
-                <address class="address">
-                  <a class="link footer-link" href="№"
-                    >ул. Васильковая, 7А Киев, 08132</a
-                  >
-                </address>
-              </l>
-              <li class="footer-contact">
-                <address class="address">
-                  <a class="link footer-link" href="tel:+380441111111"
-                    >+38 044 111 11 11</a
-                  >
-                </address>
-              </li>
-              <li class="footer-contact">
-                <address class="address">
-                  <a
-                    class="link footer-link"
-                    href="mailto:barbershop@email.com"
-                  >
-                    <svg class="icon" width="24" height="24">
-                      <use href="./img/sprite-icons.svg#icon-mail"></use>
-                    </svg>
-                    barbershop@email.com</a
-                  >
-                </address>
-              </li>
-            </ul>
-            <p class="subtitle subtitle-light subtitle-white">время работы</p>
-            <p>Ежедневно с 9:00 до 22:00</p>
+        </section>
+        <!-- /Онлайн-запись -->
+        <!-- Контакты -->
+        <section class="contacts section">
+          <div class="container">
+            <h2 class="title title-light title-center">Контакты</h2>
+            <div class="contacts-right">
+              <div class="contacts-info">
+                <ul class="list footer-contact-list">
+                  <li class="footer-contact">
+                    <address class="address">
+                      <a class="link footer-link" href="#">
+                        <svg class="icon" width="24" height="24">
+                          <use href="./img/sprite-icons.svg#icon-map-pin"></use>
+                        </svg>
+                        ул. Васильковая, 7А Киев, 08132</a
+                      >
+                    </address>
+                  </li>
+                  <li class="footer-contact">
+                    <address class="address">
+                      <a class="link footer-link" href="tel:+380441111111">
+                        <svg class="icon" width="24" height="24">
+                          <use href="./img/sprite-icons.svg#icon-phone"></use>
+                        </svg>
+                        +38 044 111 11 11</a
+                      >
+                    </address>
+                  </li>
+                  <li class="footer-contact">
+                    <address class="address">
+                      <a
+                        class="link footer-link"
+                        href="mailto:barbershop@email.com"
+                      >
+                        <svg class="icon" width="24" height="24">
+                          <use href="./img/sprite-icons.svg#icon-mail"></use>
+                        </svg>
+                        barbershop@email.com</a
+                      >
+                    </address>
+                  </li>
+                </ul>
+              </div>
+              <div class="working-time">
+                <p class="subtitle subtitle-light subtitle-white">
+                  время работы
+                </p>
+                <p>Ежедневно с 9:00 до 22:00</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- /Контакты -->
+        </section>
+        <!-- /Контакты -->
+      </div>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <p class="copyright">&copy; Copyright 2020</p>
         <ul class="list networks-list footer-networks-list">
@@ -593,7 +618,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модалка -->
     <!-- <div class="modal-backdrop is-hidden" data-modal>

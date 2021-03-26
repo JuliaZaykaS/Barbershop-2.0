@@ -1,0 +1,6 @@
+.contact-us {
+  background-color: #191c26;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
