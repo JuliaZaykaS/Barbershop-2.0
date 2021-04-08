@@ -1,8 +1,19 @@
-.booking {
-  background-color: #191c26;
-}
+// .booking {
+//   background-color: #191c26;
+// }
 .contacts-left {
-  //   // width: 50%;
+  // background-color: #191c26;
+  padding-bottom: 84px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+
+@media screen and (min-width: $desktop) {
+
+    width: 50%;
+    padding-bottom: 0;
+    padding-right: 40px;
+}
   //   // background-color: #191c26;
   //   display: flex;
 
