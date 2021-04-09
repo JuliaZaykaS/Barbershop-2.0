@@ -1193,18 +1193,20 @@ img {
 
 .contacts-left {
   padding-bottom: 84px;
+  padding-top: 84px;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-left {
     padding-bottom: 100px;
+    padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-left {
-    width: 50%;
-    padding-bottom: 0;
+    padding-top: 130px;
+    padding-bottom: 130px;
     padding-right: 40px;
   }
 }
@@ -1263,19 +1265,6 @@ img {
   }
 }
 
-.contact-us {
-  background-image: url(../img/bg-contacts.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .contact-us {
-    background-image: url(../img/bg-contacts@2x.png);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .contact-us .container {
     display: -webkit-box;
@@ -1288,7 +1277,12 @@ img {
 }
 
 .contacts-right {
+  background-image: url(../img/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 84px;
+  padding-bottom: 84px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -1298,9 +1292,16 @@ img {
   color: #9da4bd;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .contacts-right {
+    background-image: url(../img/bg-contacts@2x.png);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-right {
     padding-top: 100px;
+    padding-bottom: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1312,6 +1313,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts-right {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1319,14 +1323,20 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 50%;
-    padding-top: 0;
     padding-left: 109px;
   }
 }
 
-.contacts-info {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .contacts-info {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-info {
+    margin-left: 0;
+  }
 }
 
 .footer-link {

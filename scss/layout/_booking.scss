@@ -4,23 +4,37 @@
 .contacts-left {
   // background-color: #191c26;
   padding-bottom: 84px;
+  padding-top: 84px;
+
   @media screen and (min-width: $tablet) {
     padding-bottom: 100px;
+    padding-top: 100px;
   }
 
-@media screen and (min-width: $desktop) {
-
-    width: 50%;
-    padding-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    // .container {
+    // width: 50%;
+    // padding-right: 0;
+    // padding-left: 0;
+    // padding-left: 55px;
+    // display: flex;
+    // flex-direction: column;
+    // }
+    // width: 50%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    // padding-bottom: 0;
+    // padding-top: 0;
     padding-right: 40px;
-}
+    // padding-left: 55px;
+  }
   //   // background-color: #191c26;
-  //   display: flex;
+  // display: flex;
 
   //   // justify-content: flex-end;
   //   // padding-right: 40px;
   //   // justify-content: flex-end;
-  //   flex-direction: column;
+  // flex-direction: column;
   // @media screen and (min-width: $desktop) {
   //   padding-right: 40px;
   // }
