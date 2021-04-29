@@ -6,8 +6,9 @@
   transform-origin: left top;
 }
 
-.top-left .networks-list .social-network:not(last-child),
-.footer-networks-list .social-network:not(last-child) {
+.top-left .networks-list .social-network:not(:last-child),
+// .footer-networks-list .social-network:first-child
+{
   margin-right: 40px;
 }
 
@@ -27,6 +28,7 @@
   flex-shrink: 0;
   margin-right: 40px;
   background-color: #303030;
+  // flex-wrap: wrap;
 }
 
 .social-network-list {

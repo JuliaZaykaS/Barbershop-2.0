@@ -1,7 +1,13 @@
 .footer .container {
   display: flex;
+  // padding-top: 44px;
+  padding-bottom: 44px;
   justify-content: space-between;
-  padding: 55px;
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .copyright {
@@ -13,11 +19,27 @@
   letter-spacing: 0.2em;
 
   color: #9da4bd;
+  // margin-top: 27px;
+
+  padding-top: 79px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 0;
+  }
+  // padding-top: 79px;
+  // align-self: flex-end;
 }
 
 .footer-networks-list {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // @media screen and (min-width: $mobile) {
+  align-items: center;
+  // flex-direction: row;
+
+  // align-self: center;
+  // }
 
   font-family: Open Sans;
   font-style: normal;
@@ -25,8 +47,27 @@
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  padding-left: 27px;
-  padding-bottom: 40px;
+  // padding-left: 27px;
+  // padding-bottom: 40px;
 
   color: #303030;
+  // margin-bottom: 27px;
+  // @media screen and (min-width: $tablet) {
+  //   margin-bottom: 0;
+  // }
+
+  &::before {
+    margin-bottom: 20px;
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-networks-list .network-item:not(:last-child) {
+  // margin-bottom: 20px;
+  // @media screen and (min-width: $mobile) {
+  margin-right: 40px;
+  // margin-bottom: 0;
+  // }
 }
