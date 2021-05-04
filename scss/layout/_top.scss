@@ -96,6 +96,10 @@
 
     color: #303030;
   }
+  @media screen and (min-width: $desktop) {
+    // padding-left: 37px;
+    padding-right: 58px;
+  }
 }
 
 .top-right {
