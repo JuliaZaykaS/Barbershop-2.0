@@ -55,20 +55,20 @@
   }
 }
 
-.header .address {
-  margin-bottom: 24px;
-  @media screen and (min-width: $tablet) {
-    margin-left: auto;
-    margin-right: 50px;
-  }
-}
+// .header .address {
+//   margin-bottom: 24px;
+//   @media screen and (min-width: $tablet) {
+//     margin-left: auto;
+//     // margin-right: 50px;
+//   }
+// }
 
-.header .button {
-  margin-bottom: 64px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-  }
-}
+// .header .button {
+//   margin-bottom: 64px;
+//   @media screen and (min-width: $tablet) {
+//     margin-bottom: 0;
+//   }
+// }
 
 .header .mobile-network-list .network-item {
   margin-bottom: 24px;
@@ -88,10 +88,18 @@
 
 .mobile-menu .mobile-network-list {
   display: block;
-  text-align: right;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // text-align: right;
+  // margin-right: auto;
   @media screen and (min-width: $tablet) {
     display: none;
   }
+}
+
+.mobile-network-list .network-item {
+  display: block;
 }
 
 .mobile-menu {
@@ -104,12 +112,16 @@
     background-color: #ffffff;
 
     text-align: start;
-    padding: 118px 40px;
+    // padding: 118px 40px;
+    padding-top: 118px;
+    padding-left: 40px;
+    padding-right: 100px;
 
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    // left: 0;
+    right: 0;
     // width: 100%;
     z-index: 99;
 
@@ -180,9 +192,39 @@
 .mobile-menu .button-primary {
   @media screen and (max-width: $tablet - 1) {
     color: #303030;
+    min-width: 194px;
     &:hover,
     &:focus {
       color: #ffffff;
+    }
+  }
+}
+
+.header .mobile-network-list .link {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+
+  letter-spacing: 0.2em;
+
+  // color: #303030;
+}
+
+.header-contacts {
+  & .address {
+    margin-bottom: 24px;
+  }
+  margin-bottom: 64px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    & .button {
+      margin-bottom: 20px;
     }
   }
 }
