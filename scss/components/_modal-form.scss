@@ -1,0 +1,89 @@
+.form-input {
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+
+  .form-label {
+    .form-subtitle {
+      font-size: 12px;
+      line-height: 1.67;
+    }
+
+    .form-field {
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.14;
+      background-color: transparent;
+      color: var(--title-text-color);
+      border: 1px solid rgba(33, 33, 33, 0.2);
+
+      border-radius: 4px;
+      outline: none;
+      padding: 11px 12px;
+      transition: border var(--animation-time) var(--timing-function);
+      @media screen and (min-width: $desktop) {
+        font-size: 12px;
+        line-height: 1.16;
+      }
+
+      &.comment-field {
+        resize: none;
+        min-height: 120px;
+        padding: 12px 16px;
+
+        &::placeholder {
+          color: rgba(117, 117, 117, 0.5);
+        }
+      }
+      &.email-form {
+        width: 100%;
+        @media screen and (min-width: $desktop) {
+          width: 358px;
+        }
+        height: 50px;
+        padding: 15px 16px;
+
+        font-size: 16px;
+        line-height: 1.25;
+
+        color: var(--footer-color);
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      &.form-accent:hover,
+      &.form-accent:focus {
+        outline: none;
+        border: 1px solid var(--accent-color);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-with-icon {
+    position: relative;
+    .form-label {
+      .form-icon {
+        position: absolute;
+        top: 55%;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+
+        transition: color var(--animation-time) var(--timing-function);
+      }
+
+      .form-field {
+        padding-left: 42px;
+      }
+    }
+
+    .form-accent:focus + .icon,
+    .form-accent:hover + .icon {
+      color: var(--accent-color);
+    }
+  }
+}
