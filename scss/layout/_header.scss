@@ -86,8 +86,13 @@
 //   }
 // }
 
-.header .mobile-network-list .network-item {
+// .header .mobile-network-list .network-item {
+.mobile-network-list .network-item:not(:last-child) {
   margin-bottom: 24px;
+  // margin-right: 40px;
+}
+.mobile-network-list .network-item:last-child {
+  margin-left: 100px;
 }
 
 .telephone {
@@ -103,9 +108,11 @@
 }
 
 .mobile-menu .mobile-network-list {
-  display: block;
-  // display: flex;
-  // flex-wrap: wrap;
+  // display: block;
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
   // align-items: center;
   // text-align: right;
   // margin-right: auto;
@@ -115,7 +122,9 @@
 }
 
 .mobile-network-list .network-item {
-  display: block;
+  // display: block;
+  display: flex;
+  // align-items: center;
 }
 
 .mobile-menu {
@@ -131,7 +140,8 @@
     // padding: 118px 40px;
     padding-top: 118px;
     padding-left: 40px;
-    padding-right: 100px;
+    // padding-right: 100px;
+    padding-right: 40px;
 
     display: none;
     position: absolute;
@@ -229,6 +239,11 @@
 
   // color: #303030;
 }
+
+// .mobile-network-list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .header-contacts {
   & .address {

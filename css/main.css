@@ -527,8 +527,6 @@ img {
   height: 1px;
   left: 0;
   top: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   margin-right: 40px;
   background-color: #303030;
 }
@@ -687,8 +685,12 @@ img {
   }
 }
 
-.header .mobile-network-list .network-item {
+.mobile-network-list .network-item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.mobile-network-list .network-item:last-child {
+  margin-left: 100px;
 }
 
 .telephone {
@@ -703,7 +705,14 @@ img {
 }
 
 .mobile-menu .mobile-network-list {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 @media screen and (min-width: 768px) {
@@ -713,7 +722,9 @@ img {
 }
 
 .mobile-network-list .network-item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -724,7 +735,7 @@ img {
     text-align: start;
     padding-top: 118px;
     padding-left: 40px;
-    padding-right: 100px;
+    padding-right: 40px;
     display: none;
     position: absolute;
     top: 0;
@@ -1598,9 +1609,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -1608,6 +1619,14 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-networks-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer-networks-list::before {
@@ -1621,6 +1640,23 @@ img {
 }
 
 .footer-networks-list .network-item:not(:last-child) {
-  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-networks-list .network-item:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-networks-list .network-item:last-child {
+  margin-left: 100px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-networks-list .network-item:last-child {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

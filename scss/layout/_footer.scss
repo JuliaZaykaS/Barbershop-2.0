@@ -32,10 +32,14 @@
 .footer-networks-list {
   display: flex;
   flex-wrap: wrap;
+  // flex-wrap: wrap;
+  align-items: baseline;
+  @media screen and (min-width: $mobile) {
+    align-items: center;
+  }
   // flex-direction: column;
   // justify-content: space-between;
   // @media screen and (min-width: $mobile) {
-  align-items: center;
   // flex-direction: row;
 
   // align-self: center;
@@ -65,9 +69,15 @@
 }
 
 .footer-networks-list .network-item:not(:last-child) {
-  // margin-bottom: 20px;
-  // @media screen and (min-width: $mobile) {
-  margin-right: 40px;
-  // margin-bottom: 0;
-  // }
+  margin-bottom: 20px;
+  @media screen and (min-width: $mobile) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+.footer-networks-list .network-item:last-child {
+  margin-left: 100px;
+  @media screen and (min-width: $mobile) {
+    margin-left: 0;
+  }
 }
