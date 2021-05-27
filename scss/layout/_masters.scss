@@ -1,5 +1,5 @@
 .our-masters {
-  background-color: #f7f7f7;
+  background-color: var(--second-background-color);
 }
 
 .masters-list {
@@ -24,7 +24,7 @@
   }
   .master-name {
     margin-bottom: 8px;
-    font-family: Open Sans;
+    font-family: var(--main-font-family);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -36,7 +36,7 @@
   }
   .master-specialization {
     margin-bottom: 30px;
-    font-family: Open Sans;
+    font-family: var(--main-font-family);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

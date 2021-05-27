@@ -1,6 +1,6 @@
 .contact-us {
-  // background-color: #191c26;
-  // background-image: linear-gradient(to bottom #191c26 50%, #191c26 50%),
+  // background-color: var(--background-color);
+  // background-image: linear-gradient(to bottom var(--background-color) 50%, var(--background-color) 50%),
   // background-image: url(../img/bg-contacts.png);
   // @media screen and (min-device-pixel-ratio: 2),
   //   screen and (min-resolution: 192dpi),
@@ -59,14 +59,14 @@
 
     // width: 50%;
   }
-  font-family: Open Sans;
+  font-family: var(--main-font-family);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 
-  color: #9da4bd;
+  color: var(--second-text-color);
   // padding: 130px 100px;
   // background-image: url(../img/Bg-contacts.png);
   // background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 }
 
 .footer-link {
-  color: #9da4bd;
+  color: var(--second-text-color);
   display: inline-flex;
   align-items: center;
   & .icon {

@@ -30,14 +30,14 @@
 }
 
 .price-list {
-  font-family: Open Sans;
+  font-family: var(--main-font-family);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 
-  color: #9da4bd;
+  color: var(--second-text-color);
 
   // display: flex;
   // flex-direction: column;
