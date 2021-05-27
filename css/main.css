@@ -62,8 +62,7 @@ img {
 
 .title {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
@@ -153,8 +152,6 @@ img {
           align-items: center;
   margin-bottom: 20px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.1em;
@@ -181,8 +178,7 @@ img {
 
 .description {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.02em;
@@ -199,7 +195,6 @@ img {
 
 .button {
   font-family: var(--main-font-family);
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
@@ -254,7 +249,6 @@ img {
   border: none;
   padding: 8px 0;
   font-family: var(--main-font-family);
-  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.364;
@@ -791,8 +785,6 @@ img {
 
 .telephone {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1em;
@@ -913,8 +905,6 @@ img {
 
 .header .mobile-network-list .link {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.2em;
@@ -1104,8 +1094,6 @@ img {
     width: 120px;
     height: 680px;
     font-family: var(--main-font-family);
-    font-style: normal;
-    font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.2em;
@@ -1164,8 +1152,7 @@ img {
 
 .main-title {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--color-white);
   font-size: 40px;
 }
@@ -1182,8 +1169,7 @@ img {
   .main-title {
     margin-bottom: 20px;
     font-family: var(--secondary-font-family);
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 72px;
     line-height: 1.18;
     letter-spacing: 0.05em;
@@ -1257,8 +1243,7 @@ img {
 .description-about-us {
   margin-bottom: 40px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -1325,8 +1310,7 @@ img {
 .statistic-number {
   position: relative;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.38;
   text-align: center;
@@ -1338,8 +1322,6 @@ img {
   position: absolute;
   top: 5px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
   color: var(--accent-color);
@@ -1347,8 +1329,6 @@ img {
 
 .statistic-description {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
@@ -1412,8 +1392,7 @@ img {
 
 .price-list {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -1483,8 +1462,7 @@ img {
 .master-card .master-name {
   margin-bottom: 8px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
@@ -1495,8 +1473,7 @@ img {
 .master-card .master-specialization {
   margin-bottom: 30px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.38;
   text-align: center;
@@ -1642,8 +1619,7 @@ img {
   padding-top: 84px;
   padding-bottom: 84px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -1753,8 +1729,6 @@ img {
 
 .copyright {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
@@ -1778,8 +1752,6 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;

@@ -39,8 +39,8 @@ img {
 
 .title {
   font-family: var(--secondary-font-family);
-  font-style: normal;
-  font-weight: bold;
+  // font-style: normal;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
@@ -108,8 +108,8 @@ img {
   align-items: center;
   margin-bottom: 20px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
+  // font-style: normal;
+  // font-weight: 600;
   font-size: 11px;
   line-height: 15px;
 
@@ -137,8 +137,8 @@ img {
 
 .description {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: normal;
+  // font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.02em;

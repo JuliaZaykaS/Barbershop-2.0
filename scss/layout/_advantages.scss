@@ -43,8 +43,8 @@
 .statistic-number {
   position: relative;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: bold;
+  // font-style: normal;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.38;
   text-align: center;
@@ -57,8 +57,8 @@
   position: absolute;
   top: 5px;
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
+  // font-style: normal;
+  // font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
   color: var(--accent-color);
@@ -66,8 +66,8 @@
 
 .statistic-description {
   font-family: var(--main-font-family);
-  font-style: normal;
-  font-weight: 600;
+  // font-style: normal;
+  // font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
