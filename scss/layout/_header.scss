@@ -171,6 +171,11 @@
   // outline: none;
   border: transparent;
   z-index: 999;
+  fill: #ffffff;
+  &:hover,
+  &:focus {
+    fill: #ff6c00;
+  }
 
   @media screen and (min-width: $tablet) {
     display: none;
@@ -178,6 +183,11 @@
 
   &.is-open .btn-close-menu {
     display: block;
+    fill: #303030;
+    &:hover,
+    &:focus {
+      fill: #ff6c00;
+    }
   }
   &.is-open .btn-mobile-menu {
     display: none;

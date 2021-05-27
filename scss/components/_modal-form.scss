@@ -1,6 +1,6 @@
-.form-input {
+.form-modal-input {
   letter-spacing: 0.01em;
-  color: var(--main-text-color);
+  color: #303030;
 
   .form-label {
     .form-subtitle {
@@ -13,8 +13,8 @@
       font-size: 14px;
       line-height: 1.14;
       background-color: transparent;
-      color: var(--title-text-color);
-      border: 1px solid rgba(33, 33, 33, 0.2);
+      color: #303030;
+      border: 1px solid #555555;
 
       border-radius: 4px;
       outline: none;
@@ -26,6 +26,7 @@
       }
 
       &.comment-field {
+        // &.form-comment {
         resize: none;
         min-height: 120px;
         padding: 12px 16px;
@@ -34,35 +35,35 @@
           color: rgba(117, 117, 117, 0.5);
         }
       }
-      &.email-form {
-        width: 100%;
-        @media screen and (min-width: $desktop) {
-          width: 358px;
-        }
-        height: 50px;
-        padding: 15px 16px;
+      // &.email-form {
+      //   width: 100%;
+      //   @media screen and (min-width: $desktop) {
+      //     width: 358px;
+      //   }
+      //   height: 50px;
+      //   padding: 15px 16px;
 
-        font-size: 16px;
-        line-height: 1.25;
+      //   font-size: 16px;
+      //   line-height: 1.25;
 
-        color: var(--footer-color);
+      //   color: #555555;
 
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        &::placeholder {
-          color: rgba(255, 255, 255, 0.6);
-        }
-      }
+      //   border: 1px solid rgba(255, 255, 255, 0.3);
+      //   &::placeholder {
+      //     color: rgba(255, 255, 255, 0.6);
+      //   }
+      // }
 
       &.form-accent:hover,
       &.form-accent:focus {
         outline: none;
-        border: 1px solid var(--accent-color);
+        border: 1px solid #ff6c00;
         cursor: pointer;
       }
     }
   }
 
-  &-with-icon {
+  .form-modal-input {
     position: relative;
     .form-label {
       .form-icon {
@@ -83,7 +84,70 @@
 
     .form-accent:focus + .icon,
     .form-accent:hover + .icon {
-      color: var(--accent-color);
+      color: #ff6c00;
     }
+  }
+}
+
+.form-agreement {
+  margin-bottom: 31px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  font-size: 12px;
+  line-height: 1.67;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+    height: 15px;
+  }
+
+  &-link {
+    color: #ff6c00;
+  }
+}
+
+.agree-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  transition: border-color var(--animation-time) var(--timing-function),
+    background-color var(--animation-time) var(--timing-function);
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
+
+  .agree-checkbox:focus + & {
+    border-color: #ff6c00;
+  }
+  .agree-checkbox:checked + & {
+    // background-image: url(../images/main/icon-check.svg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: center;
+    // background-origin: border-box;
+    background-color: #ff6c00;
+    border-color: #ff6c00;
   }
 }
