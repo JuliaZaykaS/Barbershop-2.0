@@ -46,25 +46,52 @@ img {
   letter-spacing: 0.05em;
   color: #303030;
   text-align: left;
-  &-tablet {
-    @media screen and (max-width: 767px) {
-      font-family: Raleway;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 28px;
-      line-height: 33px;
-      letter-spacing: 0.05em;
+  // @media screen and (max-width: 767px) {
+  //   &.title-tablet {
+  //     font-family: Raleway;
+  //     font-style: normal;
+  //     font-weight: bold;
+  //     font-size: 28px;
+  //     line-height: 1.18;
+  //     letter-spacing: 0.05em;
 
-      color: #303030;
-    }
-  }
-  &-center {
-    text-align: center;
-    @media screen and (min-width: $tablet) {
-      text-align: start;
-    }
+  //     color: #303030;
+  //   }
+  // }
+  // &-center {
+  //   text-align: center;
+  //   @media screen and (min-width: $tablet) {
+  //     text-align: start;
+  //   }
+  // }
+}
+
+.title-tablet {
+  font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
   }
 }
+
+.title-center {
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+// .about-us .title.title-tablet {
+//   @media screen and (max-width: 767px) {
+//     font-family: Raleway;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 28px;
+//     line-height: 33px;
+//     letter-spacing: 0.05em;
+
+//     color: #303030;
+//   }
+// }
 
 .container {
   margin-left: auto;
