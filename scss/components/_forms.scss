@@ -14,14 +14,14 @@
     font-size: 11px;
     line-height: 1.364;
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: var(--color-white);
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   }
 
   .form-input:focus,
   .form-comment:focus {
     outline: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--color-white);
   }
 
   .form-input::placeholder,
@@ -32,7 +32,7 @@
 
   .form-input:focus::placeholder,
   .form-comment:focus::placeholder {
-    color: #ffffff;
+    color: var(--color-white);
   }
 
   // .form-input-name,
@@ -52,7 +52,7 @@
   //   min-width: 160px;
   //   height: 40px;
   //   padding: 12px 20px;
-  //   border: 1px solid #ff6c00;
+  //   border: 1px solid var(--accent-color);
   //   border-radius: 25px;
 
   //   font-family: "Open Sans", sans-serif;
@@ -62,19 +62,19 @@
   //   line-height: 1.333;
   //   letter-spacing: 0.09em;
   //   text-transform: uppercase;
-  //   color: #ffffff;
+  //   color: var(--color-white);
   //   background-color: transparent;
 
   //   transition-duration: 250ms;
   // }
 
   // .form-submit-btn {
-  //   color: #ffffff;
+  //   color: var(--color-white);
   // }
 
   // .form-submit-btn:hover,
   // .form-submit-btn:focus {
-  //   background-color: #ff6c00;
+  //   background-color: var(--accent-color);
   //   cursor: pointer;
   // }
 }

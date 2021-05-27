@@ -66,14 +66,14 @@
 //   font-size: 11px;
 //   line-height: 1.364;
 //   letter-spacing: 0.1em;
-//   color: #ffffff;
+//   color: var(--color-white);
 //   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 // }
 
 // .form-input:focus,
 // .form-comment:focus {
 //   outline: none;
-//   border-bottom: 1px solid #ffffff;
+//   border-bottom: 1px solid var(--color-white);
 // }
 
 // .form-input::placeholder,
@@ -84,7 +84,7 @@
 
 // .form-input:focus::placeholder,
 // .form-comment:focus::placeholder {
-//   color: #ffffff;
+//   color: var(--color-white);
 // }
 
 .form-contacts {

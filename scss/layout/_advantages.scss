@@ -1,17 +1,17 @@
 .advantages {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
 .statistics {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 450px;
     margin-left: auto;
     // justify-self: flex-end;
   }
-  // @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: $desktop) {
   //   margin-left: 130px;
   // }
 }
@@ -54,7 +54,7 @@
   text-align: center;
   letter-spacing: 0.05em;
 
-  color: #303030;
+  color: var(--title-color);
 }
 
 .statistic-more {
@@ -65,7 +65,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.38;
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .statistic-description {
@@ -76,21 +76,21 @@
   line-height: 1.36;
   text-align: center;
 
-  color: #303030;
+  color: var(--title-color);
 }
 
 .advantages-description {
   margin-bottom: 44px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 500px;
     // margin-l: 240px;
     // justify-self: flex-start;
     // margin-right: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
-  // @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: $desktop) {
   //   margin-left: 130px;
   // }
 }

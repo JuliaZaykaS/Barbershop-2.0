@@ -3,14 +3,14 @@
 // }
 
 .description-dark {
-  columns: #555555;
+  columns: var(--text-color);
   margin-bottom: 20px;
 }
 
 .button-primary-dark {
-  color: #303030;
+  color: var(--title-color);
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: var(--color-white);
   }
 }

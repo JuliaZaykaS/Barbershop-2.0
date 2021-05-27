@@ -7,7 +7,7 @@ body {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
-  color: #555555;
+  color: var(--text-color);
 }
 
 img {
@@ -44,7 +44,7 @@ img {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--title-color);
   text-align: left;
   // @media screen and (max-width: 767px) {
   //   &.title-tablet {
@@ -55,7 +55,7 @@ img {
   //     line-height: 1.18;
   //     letter-spacing: 0.05em;
 
-  //     color: #303030;
+  //     color: var(--title-color);
   //   }
   // }
   // &-center {
@@ -68,7 +68,7 @@ img {
 
 .title-tablet {
   font-size: 28px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 42px;
   }
 }
@@ -89,7 +89,7 @@ img {
 //     line-height: 33px;
 //     letter-spacing: 0.05em;
 
-//     color: #303030;
+//     color: var(--title-color);
 //   }
 // }
 
@@ -99,17 +99,17 @@ img {
   padding-left: 31px;
   padding-right: 31px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     max-width: 480px;
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 768px;
     width: 100%;
     padding-left: 39px;
     padding-right: 39px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 1200px;
     width: 100%;
     padding-left: 55px;
@@ -120,7 +120,7 @@ img {
 //   padding: 0 31px;
 //   width: 480px;
 //   margin: 0 auto;
-//   @media screen and (min-width: 1200px) {
+//   @media screen and (min-width: $desktop) {
 //     width: 1200px;
 //     padding-left: 15px;
 //     padding-right: 15px;
@@ -134,10 +134,10 @@ img {
 
 .section {
   padding: 84px 0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 100px 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 130px 0;
   }
 }
@@ -155,7 +155,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: #303030;
+  color: var(--title-color);
 
   &::before {
     display: block;
@@ -165,7 +165,7 @@ img {
     left: 0;
     top: 0;
     margin-right: 20px;
-    background-color: #303030;
+    background-color: var(--title-color);
     /* flex-shrink: 0; */
   }
   &-mobile-line-break {
@@ -184,7 +184,7 @@ img {
   letter-spacing: 0.02em;
 
   color: #9da4bd;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     // font-family: Open Sans;
     // font-style: normal;
     // font-weight: normal;

@@ -56,7 +56,7 @@
   font-size: 18px;
   line-height: 1.333;
   letter-spacing: 0.1em;
-  color: #303030;
+  color: var(--title-color);
   transition-duration: 250ms;
 
   @media screen and (min-width: $tablet) {
@@ -64,10 +64,10 @@
   }
   &:hover,
   &:focus {
-    color: #ff6c00;
+    color: var(--accent-color);
   }
   @media screen and (min-width: $tablet) {
-    color: #ffffff;
+    color: var(--color-white);
   }
 }
 
@@ -104,7 +104,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .mobile-menu .mobile-network-list {
@@ -134,7 +134,7 @@
     // display: flex;
     // flex-direction: column;
     // justify-content: space-between;
-    background-color: #ffffff;
+    background-color: var(--color-white);
 
     text-align: start;
     // padding: 118px 40px;
@@ -171,10 +171,10 @@
   // outline: none;
   border: transparent;
   z-index: 999;
-  fill: #ffffff;
+  fill: var(--color-white);
   &:hover,
   &:focus {
-    fill: #ff6c00;
+    fill: var(--accent-color);
   }
 
   @media screen and (min-width: $tablet) {
@@ -183,10 +183,10 @@
 
   &.is-open .btn-close-menu {
     display: block;
-    fill: #303030;
+    fill: var(--title-color);
     &:hover,
     &:focus {
-      fill: #ff6c00;
+      fill: var(--accent-color);
     }
   }
   &.is-open .btn-mobile-menu {
@@ -229,11 +229,11 @@
 
 .mobile-menu .button-primary {
   @media screen and (max-width: $tablet - 1) {
-    color: #303030;
+    color: var(--title-color);
     min-width: 194px;
     &:hover,
     &:focus {
-      color: #ffffff;
+      color: var(--color-white);
     }
   }
 }
@@ -247,7 +247,7 @@
 
   letter-spacing: 0.2em;
 
-  // color: #303030;
+  // color: var(--title-color);
 }
 
 // .mobile-network-list {

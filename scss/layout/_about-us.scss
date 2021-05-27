@@ -4,14 +4,14 @@
 
 .images {
   margin-right: 30px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 64px;
   }
 }
 
 .images-list {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     // width: 50%;
 
@@ -24,7 +24,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     // height: 445px;
     & .image:not(:last-child) {
@@ -39,11 +39,11 @@
 }
 
 .about-us {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     // width: 50%;
     width: 330px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 500px;
   }
 }
@@ -58,5 +58,5 @@
   line-height: 1.86;
   letter-spacing: 0.02em;
 
-  color: #555555;
+  color: var(--text-color);
 }
