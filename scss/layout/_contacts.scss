@@ -1,15 +1,4 @@
 .contact-us {
-  // background-color: var(--background-color);
-  // background-image: linear-gradient(to bottom var(--background-color) 50%, var(--background-color) 50%),
-  // background-image: url(../img/bg-contacts.png);
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   background-image: url(../img/bg-contacts@2x.png);
-  // }
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
   .container {
     @media screen and (min-width: $desktop) {
       display: flex;
@@ -17,13 +6,6 @@
     }
   }
 }
-
-// .contacts-left,
-// .contacts-right {
-//   @media screen and (min-width: $desktop) {
-//     width: 50%;
-//   }
-// }
 
 .contacts-right {
   background-image: url(../img/bg-contacts.png);
@@ -45,19 +27,13 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // padding-top: 0;
-    // padding-bottom: 0;
     padding-top: 130px;
     padding-bottom: 130px;
-    // .container {
-    // width: 50%;
+
     padding-left: 0;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 109px;
-    // }
-
-    // width: 50%;
   }
   font-family: var(--main-font-family);
   font-style: normal;
@@ -67,18 +43,7 @@
   letter-spacing: 0.02em;
 
   color: var(--second-text-color);
-  // padding: 130px 100px;
-  // background-image: url(../img/Bg-contacts.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
 }
-
-// .contacts-info,
-// .working-time {
-//   @media screen and (min-width: $tablet) {
-//     // width: 50%;
-//   }
-// }
 
 .contacts-info {
   @media screen and (min-width: $tablet) {

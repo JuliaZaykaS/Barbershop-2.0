@@ -1,8 +1,6 @@
 .header {
   position: absolute;
-  /* top: 0;
-  left: 50%;
-  transition: translate (-50%, 0); */
+
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -22,7 +20,7 @@
 .header .menu {
   @media screen and (min-width: $tablet) {
     display: flex;
-    // align-items: center;
+
     justify-content: center;
   }
 }
@@ -71,25 +69,8 @@
   }
 }
 
-// .header .address {
-//   margin-bottom: 24px;
-//   @media screen and (min-width: $tablet) {
-//     margin-left: auto;
-//     // margin-right: 50px;
-//   }
-// }
-
-// .header .button {
-//   margin-bottom: 64px;
-//   @media screen and (min-width: $tablet) {
-//     margin-bottom: 0;
-//   }
-// }
-
-// .header .mobile-network-list .network-item {
 .mobile-network-list .network-item:not(:last-child) {
   margin-bottom: 24px;
-  // margin-right: 40px;
 }
 .mobile-network-list .network-item:last-child {
   margin-left: 100px;
@@ -108,47 +89,40 @@
 }
 
 .mobile-menu .mobile-network-list {
-  // display: block;
   display: flex;
-  // flex-direction: column;
+
   flex-wrap: wrap;
   align-items: baseline;
-  // align-items: center;
-  // text-align: right;
-  // margin-right: auto;
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
 .mobile-network-list .network-item {
-  // display: block;
   display: flex;
-  // align-items: center;
 }
 
 .mobile-menu {
   @media screen and (max-width: $tablet - 1) {
     min-height: 796px;
     width: 337px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+
     background-color: var(--color-white);
 
     text-align: start;
-    // padding: 118px 40px;
+
     padding-top: 118px;
     padding-left: 40px;
-    // padding-right: 100px;
+
     padding-right: 40px;
 
     display: none;
     position: absolute;
     top: 0;
-    // left: 0;
+
     right: 0;
-    // width: 100%;
+
     z-index: 99;
 
     &.is-open {
@@ -159,7 +133,7 @@
   @media screen and (min-width: $tablet) {
     width: 100%;
     display: flex;
-    // align-items: center;
+
     justify-content: space-between;
   }
   @media screen and (min-width: $desktop) {
@@ -168,7 +142,7 @@
 
 .btn.menu-btn {
   background-color: transparent;
-  // outline: none;
+
   border: transparent;
   z-index: 999;
   fill: var(--color-white);
@@ -199,32 +173,10 @@
 }
 
 .header .container {
-  // .mob-navigation {
   display: flex;
   justify-content: space-between;
-  // justify-content: center;
 
   align-items: center;
-  // justify-content: left;
-  // margin-left: auto;
-  // margin-right: auto;
-}
-
-.header .link {
-  // .mob-navigation .link {
-  // display: block;
-  // width: 69px;
-  // margin-right: auto;
-  // margin-left: auto;
-}
-
-.header .btn {
-  // .mob-navigation .btn.menu-btn {
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  // align-items: flex-end;
-  // justify-self: flex-end;
 }
 
 .mobile-menu .button-primary {
@@ -239,21 +191,14 @@
 }
 
 .header .mobile-network-list .link {
-  font-family: $main-font-family;
+  font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.36;
 
   letter-spacing: 0.2em;
-
-  // color: var(--title-color);
 }
-
-// .mobile-network-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
 
 .header-contacts {
   & .address {
@@ -290,7 +235,5 @@
     width: 69px;
     margin-right: 40px;
     align-self: flex-start;
-    // display: block;
-    // display: flex;
   }
 }

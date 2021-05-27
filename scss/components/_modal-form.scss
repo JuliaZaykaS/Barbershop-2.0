@@ -35,24 +35,6 @@
           color: rgba(117, 117, 117, 0.5);
         }
       }
-      // &.email-form {
-      //   width: 100%;
-      //   @media screen and (min-width: $desktop) {
-      //     width: 358px;
-      //   }
-      //   height: 50px;
-      //   padding: 15px 16px;
-
-      //   font-size: 16px;
-      //   line-height: 1.25;
-
-      //   color: var(--text-color);
-
-      //   border: 1px solid rgba(255, 255, 255, 0.3);
-      //   &::placeholder {
-      //     color: rgba(255, 255, 255, 0.6);
-      //   }
-      // }
 
       &.form-accent:hover,
       &.form-accent:focus {
@@ -142,11 +124,6 @@
     border-color: var(--accent-color);
   }
   .agree-checkbox:checked + & {
-    // background-image: url(../images/main/icon-check.svg);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: center;
-    // background-origin: border-box;
     background-color: var(--accent-color);
     border-color: var(--accent-color);
   }

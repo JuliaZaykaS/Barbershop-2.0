@@ -9,11 +9,7 @@
   @media screen and (min-width: $tablet) {
     width: 450px;
     margin-left: auto;
-    // justify-self: flex-end;
   }
-  // @media screen and (min-width: $desktop) {
-  //   margin-left: 130px;
-  // }
 }
 
 .statistic-list {
@@ -28,7 +24,7 @@
   padding: 20px 24px;
 
   flex-basis: calc((100% - 2 * 30px) / 2);
-  // width: 170px;
+
   height: 133px;
   background-color: var(--second-background-color);
 
@@ -83,14 +79,8 @@
   margin-bottom: 44px;
   @media screen and (min-width: $tablet) {
     width: 500px;
-    // margin-l: 240px;
-    // justify-self: flex-start;
-    // margin-right: auto;
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
-  // @media screen and (min-width: $desktop) {
-  //   margin-left: 130px;
-  // }
 }

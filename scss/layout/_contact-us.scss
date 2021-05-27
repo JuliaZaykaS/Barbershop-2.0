@@ -1,21 +1,7 @@
 .contact-us {
   background-color: var(--background-color);
-  // background-image: url(../img/bg-contacts.png);
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   background-image: url(../img/bg-contacts@2x.png);
-  // }
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
-  // background-position: 0 50%;
-  // @media screen and (min-width: $tablet) {
-  //   background-position: center;
-  // }
+
   @media screen and (min-width: $desktop) {
     display: flex;
-    // padding: 130px 0;
-    // background-position: center;
   }
 }

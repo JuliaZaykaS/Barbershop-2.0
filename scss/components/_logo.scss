@@ -1,14 +1,13 @@
 .logo {
   width: 69px;
   height: 56px;
-  // margin-right: 70px;
+
   animation-duration: 500ms;
   animation-iteration-count: 4;
-  // z-index: 99;
+
   &-inverse {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1) {
       fill: var(--color-white);
-      // color: #fff;
     }
   }
 }

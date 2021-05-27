@@ -3,7 +3,9 @@
 }
 
 .images {
-  margin-right: 30px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 64px;
   }
@@ -13,7 +15,6 @@
   display: none;
   @media screen and (min-width: $tablet) {
     display: block;
-    // width: 50%;
 
     .image {
       width: 100%;
@@ -26,7 +27,7 @@
   }
   @media screen and (min-width: $desktop) {
     display: flex;
-    // height: 445px;
+
     & .image:not(:last-child) {
       margin-right: 30px;
       margin-bottom: 0;
@@ -40,7 +41,6 @@
 
 .about-us {
   @media screen and (min-width: $tablet) {
-    // width: 50%;
     width: 330px;
   }
   @media screen and (min-width: $desktop) {

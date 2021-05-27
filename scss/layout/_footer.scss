@@ -1,6 +1,6 @@
 .footer .container {
   display: flex;
-  // padding-top: 44px;
+
   padding-bottom: 44px;
   justify-content: space-between;
   align-items: center;
@@ -19,31 +19,21 @@
   letter-spacing: 0.2em;
 
   color: var(--second-text-color);
-  // margin-top: 27px;
 
   padding-top: 79px;
   @media screen and (min-width: $tablet) {
     padding-top: 0;
   }
-  // padding-top: 79px;
-  // align-self: flex-end;
 }
 
 .footer-networks-list {
   display: flex;
   flex-wrap: wrap;
-  // flex-wrap: wrap;
+
   align-items: baseline;
   @media screen and (min-width: $mobile) {
     align-items: center;
   }
-  // flex-direction: column;
-  // justify-content: space-between;
-  // @media screen and (min-width: $mobile) {
-  // flex-direction: row;
-
-  // align-self: center;
-  // }
 
   font-family: var(--main-font-family);
   font-style: normal;
@@ -51,14 +41,8 @@
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  // padding-left: 27px;
-  // padding-bottom: 40px;
 
   color: var(--title-color);
-  // margin-bottom: 27px;
-  // @media screen and (min-width: $tablet) {
-  //   margin-bottom: 0;
-  // }
 
   &::before {
     margin-bottom: 20px;

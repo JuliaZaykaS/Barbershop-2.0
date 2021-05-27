@@ -21,8 +21,11 @@
 
   --main-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
+
+  /* Анимация */
+  --animation-time: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Палитра */
 
 $mobile: 480px;
 $tablet: 768px;

@@ -38,7 +38,7 @@ img {
 }
 
 .title {
-  font-family: "var(--secondary-font-family)", sans-serif;
+  font-family: var(--secondary-font-family);
   font-style: normal;
   font-weight: bold;
   font-size: 42px;
@@ -46,24 +46,6 @@ img {
   letter-spacing: 0.05em;
   color: var(--title-color);
   text-align: left;
-  // @media screen and (max-width: 767px) {
-  //   &.title-tablet {
-  //     font-family: var(--secondary-font-family);
-  //     font-style: normal;
-  //     font-weight: bold;
-  //     font-size: 28px;
-  //     line-height: 1.18;
-  //     letter-spacing: 0.05em;
-
-  //     color: var(--title-color);
-  //   }
-  // }
-  // &-center {
-  //   text-align: center;
-  //   @media screen and (min-width: $tablet) {
-  //     text-align: start;
-  //   }
-  // }
 }
 
 .title-tablet {
@@ -80,25 +62,14 @@ img {
   }
 }
 
-// .about-us .title.title-tablet {
-//   @media screen and (max-width: 767px) {
-//     font-family: var(--secondary-font-family);
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 28px;
-//     line-height: 33px;
-//     letter-spacing: 0.05em;
-
-//     color: var(--title-color);
-//   }
-// }
-
 .container {
   margin-left: auto;
   margin-right: auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+
   padding-left: 31px;
   padding-right: 31px;
-
   @media screen and (min-width: $mobile) {
     max-width: 480px;
     width: 100%;
@@ -116,16 +87,6 @@ img {
     padding-right: 55px;
   }
 }
-// .container {
-//   padding: 0 31px;
-//   width: 480px;
-//   margin: 0 auto;
-//   @media screen and (min-width: $desktop) {
-//     width: 1200px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//   }
-// }
 
 .address {
   font-style: normal;
@@ -166,10 +127,9 @@ img {
     top: 0;
     margin-right: 20px;
     background-color: var(--title-color);
-    /* flex-shrink: 0; */
   }
   &-mobile-line-break {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1) {
       line-height: 1.91;
     }
   }
@@ -185,9 +145,6 @@ img {
 
   color: var(--second-text-color);
   @media screen and (min-width: $desktop) {
-    // font-family: var(--main-font-family);
-    // font-style: normal;
-    // font-weight: normal;
     font-size: 18px;
     line-height: 1.667;
     letter-spacing: 0.02em;
