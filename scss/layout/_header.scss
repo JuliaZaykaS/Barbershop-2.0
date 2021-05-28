@@ -35,7 +35,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 40px;
+    margin-left: var(--margin-l);
   }
 }
 
@@ -46,13 +46,13 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: 40px;
+    margin-right: var(--margin-l);
   }
 }
 
 .header .link {
   font-size: 18px;
-  line-height: 1.333;
+  line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--title-color);
   transition-duration: 250ms;
@@ -77,11 +77,11 @@
 }
 
 .telephone {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
@@ -191,7 +191,7 @@
 }
 
 .header .mobile-network-list .link {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 14px;
@@ -212,7 +212,7 @@
     justify-content: center;
     margin-bottom: 0;
     & .button {
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-s);
     }
     & .address {
       margin-bottom: 0;
@@ -222,7 +222,7 @@
     flex-direction: row;
 
     & .address {
-      margin-right: 40px;
+      margin-right: var(--margin-l);
     }
     & .button {
       margin-bottom: 0;
@@ -233,7 +233,7 @@
 .header .link-logo {
   @media screen and (min-width: $tablet) {
     width: 69px;
-    margin-right: 40px;
+    margin-right: var(--margin-l);
     align-self: flex-start;
   }
 }

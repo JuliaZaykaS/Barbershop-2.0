@@ -29,20 +29,20 @@
   background-color: var(--second-background-color);
 
   &:not(:nth-child(2)) {
-    margin-right: 30px;
+    margin-right: var(--margin-m);
   }
 
   &:not(:nth-child(2)) {
-    margin-bottom: 30px;
+    margin-bottom: var(--margin-m);
   }
   &:nth-child(2n + 2) {
-    margin-top: 30px;
+    margin-top: var(--margin-m);
   }
 }
 
 .statistic-number {
   position: relative;
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   font-weight: 700;
   font-size: 42px;
@@ -56,7 +56,7 @@
 .statistic-more {
   position: absolute;
   top: 5px;
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 16px;
@@ -65,7 +65,7 @@
 }
 
 .statistic-description {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 11px;

@@ -4,7 +4,7 @@
 
 .images {
   @media screen and (min-width: $tablet) {
-    margin-right: 30px;
+    margin-right: var(--margin-m);
   }
   @media screen and (min-width: $desktop) {
     margin-right: 64px;
@@ -22,14 +22,14 @@
     }
 
     & .image:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: var(--margin-m);
     }
   }
   @media screen and (min-width: $desktop) {
     display: flex;
 
     & .image:not(:last-child) {
-      margin-right: 30px;
+      margin-right: var(--margin-m);
       margin-bottom: 0;
     }
     .image {
@@ -49,14 +49,14 @@
 }
 
 .description-about-us {
-  margin-bottom: 40px;
+  margin-bottom: var(--margin-l);
 
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
-  letter-spacing: 0.02em;
+  // letter-spacing: 0.02em;
 
   color: var(--text-color);
 }

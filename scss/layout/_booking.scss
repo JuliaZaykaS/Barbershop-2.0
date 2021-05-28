@@ -31,7 +31,7 @@
 
 .form-input-name {
   @media screen and (min-width: $tablet) {
-    margin-right: 30px;
+    margin-right: var(--margin-m);
   }
   @media screen and (min-width: $desktop) {
     width: 270px;

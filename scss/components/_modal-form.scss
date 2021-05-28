@@ -5,7 +5,7 @@
   .form-label {
     .form-subtitle {
       font-size: 12px;
-      line-height: 1.67;
+      // line-height: 1.67;
     }
 
     .form-field {
@@ -75,7 +75,7 @@
   margin-bottom: 31px;
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 30px;
+    margin-bottom: var(--margin-m);
   }
 }
 
@@ -85,7 +85,7 @@
   cursor: pointer;
 
   font-size: 12px;
-  line-height: 1.67;
+  // line-height: 1.67;
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;

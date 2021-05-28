@@ -6,8 +6,8 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    margin-left: calc(-1 * var(--margin-m));
+    margin-bottom: calc(-1 * var(--margin-m));
   }
 }
 
@@ -15,34 +15,34 @@
   margin-bottom: 64px;
   flex-basis: 100%;
   @media screen and (min-width: $desktop) {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
+    flex-basis: calc(100% / 3 - var(--margin-m));
+    margin-left: var(--margin-m);
     margin-bottom: 0;
   }
   .master-foto {
-    margin-bottom: 30px;
+    margin-bottom: var(--margin-m);
   }
   .master-name {
     margin-bottom: 8px;
-    font-family: var(--main-font-family);
+    // font-family: var(--main-font-family);
     // font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;
     text-align: center;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
 
     color: var(--title-color);
   }
   .master-specialization {
-    margin-bottom: 30px;
-    font-family: var(--main-font-family);
+    margin-bottom: var(--margin-m);
+    // font-family: var(--main-font-family);
     // font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.38;
     text-align: center;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
 
     color: var(--accent-color);
   }

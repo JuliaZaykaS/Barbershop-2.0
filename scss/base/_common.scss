@@ -7,6 +7,8 @@ body {
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.67;
   color: var(--text-color);
 }
 
@@ -34,7 +36,7 @@ img {
 }
 
 .mb-title-right {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin-s);
 }
 
 .title {
@@ -106,12 +108,12 @@ img {
 .subtitle {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  font-family: var(--main-font-family);
+  margin-bottom: var(--margin-s);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -125,7 +127,7 @@ img {
     height: 1px;
     left: 0;
     top: 0;
-    margin-right: 20px;
+    margin-right: var(--margin-s);
     background-color: var(--title-color);
   }
   &-mobile-line-break {
@@ -136,17 +138,17 @@ img {
 }
 
 .description {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.02em;
+  // letter-spacing: 0.02em;
 
   color: var(--second-text-color);
   @media screen and (min-width: $desktop) {
     font-size: 18px;
-    line-height: 1.667;
-    letter-spacing: 0.02em;
+    // line-height: 1.67;
+    // letter-spacing: 0.02em;
   }
 }

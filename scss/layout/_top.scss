@@ -65,7 +65,7 @@
     width: 120px;
     height: 680px;
 
-    font-family: var(--main-font-family);
+    // font-family: var(--main-font-family);
     // font-style: normal;
     // font-weight: 600;
     font-size: 11px;
@@ -125,11 +125,11 @@
 
   @media screen and (min-width: $mobile) {
     font-size: 48px;
-    line-height: 1.67;
+    // line-height: 1.67;
     letter-spacing: 0.05em;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-s);
     font-family: var(--secondary-font-family);
     // font-style: normal;
     font-weight: 700;

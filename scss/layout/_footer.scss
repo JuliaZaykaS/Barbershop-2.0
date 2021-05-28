@@ -11,7 +11,7 @@
 }
 
 .copyright {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 11px;
@@ -35,7 +35,7 @@
     align-items: center;
   }
 
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   // font-weight: 600;
   font-size: 11px;
@@ -45,7 +45,7 @@
   color: var(--title-color);
 
   &::before {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-s);
     @media screen and (min-width: $mobile) {
       margin-bottom: 0;
     }
@@ -53,9 +53,9 @@
 }
 
 .footer-networks-list .network-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin-s);
   @media screen and (min-width: $mobile) {
-    margin-right: 40px;
+    margin-right: var(--margin-l);
     margin-bottom: 0;
   }
 }

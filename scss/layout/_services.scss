@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
+  // text-align: center;
 }
 
 .service-prices {
@@ -30,12 +30,12 @@
 }
 
 .price-list {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   // font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
 
   color: var(--second-text-color);
 
@@ -63,5 +63,5 @@
   display: flex;
 
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: var(--margin-s);
 }
