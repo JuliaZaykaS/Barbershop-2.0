@@ -1,11 +1,16 @@
 .top {
   background-color: var(--background-color);
-  background-image: linear-gradient(
-    rgba(25, 28, 38, 0.2),
-    rgba(25, 28, 38, 0.2)
-  );
+
   height: 580px;
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $tablet) {
+    height: 680px;
+  }
+}
+
+.top-slide-one {
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
@@ -16,7 +21,6 @@
     screen and (min-resolution: 2dppx) {
     background-image: url(../img/bg-top-mobile-1@2x.jpg);
   }
-  background-position: center;
   @media screen and (max-width: $tablet - 1) {
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
@@ -28,18 +32,80 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../img/bg-top-tablet-1@2x.jpg);
     }
-    background-position: center;
   }
   @media screen and (min-width: $tablet) {
-    height: 680px;
-
-    background-position: center;
     background-size: cover;
     background-image: url(../img/bg-top-desktop-1.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../img/bg-top-desktop-1@2x.jpg);
+    }
+  }
+}
+.top-slide-two {
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/bg-top-mobile-2.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../img/bg-top-mobile-2@2x.jpg);
+  }
+  @media screen and (max-width: $tablet - 1) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/bg-top-tablet-2.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../img/bg-top-tablet-2@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    background-size: cover;
+    background-image: url(../img/bg-top-desktop-2.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../img/bg-top-desktop-2@2x.jpg);
+    }
+  }
+}
+.top-slide-three {
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/bg-top-mobile-3.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../img/bg-top-mobile-3@2x.jpg);
+  }
+  @media screen and (max-width: $tablet - 1) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/bg-top-tablet-3.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../img/bg-top-tablet-3@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    background-size: cover;
+    background-image: url(../img/bg-top-desktop-3.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../img/bg-top-desktop-3@2x.jpg);
     }
   }
 }
@@ -90,6 +156,10 @@
   }
 
   @media screen and (min-width: $tablet) {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
     background-repeat: no-repeat;
 
     height: 680px;
@@ -110,6 +180,16 @@
     background-position: center;
     background-size: cover;
     width: 1125px;
+  }
+}
+
+.top-right-info {
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-right: 132px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 452px;
   }
 }
 
@@ -134,5 +214,31 @@
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--color-white);
+  }
+}
+
+.slider-navigation {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  // margin-left: auto;
+  // text-align: end;
+
+  .slider-item {
+    height: 2px;
+    background-color: var(--second-text-color);
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    &.slider-nav-one {
+      width: 18px;
+    }
+    &.slider-nav-two,
+    &.slider-nav-three {
+      width: 8px;
+    }
   }
 }

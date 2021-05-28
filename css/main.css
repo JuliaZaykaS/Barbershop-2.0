@@ -1017,47 +1017,125 @@ img {
 
 .top {
   background-color: var(--background-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2)));
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   height: 580px;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-mobile-1.jpg);
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-mobile-1.jpg);
   background-position: center;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .top {
-    background-image: url(../img/bg-top-mobile-1@2x.jpg);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .top {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-tablet-1.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-tablet-1.jpg);
-    background-position: center;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .top {
-    background-image: url(../img/bg-top-tablet-1@2x.jpg);
-  }
 }
 
 @media screen and (min-width: 768px) {
   .top {
     height: 680px;
-    background-position: center;
+  }
+}
+
+.top-slide-one {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-mobile-1.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-mobile-1.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .top-slide-one {
+    background-image: url(../img/bg-top-mobile-1@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-slide-one {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-tablet-1.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-tablet-1.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .top-slide-one {
+    background-image: url(../img/bg-top-tablet-1@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-slide-one {
     background-size: cover;
     background-image: url(../img/bg-top-desktop-1.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .top {
+  .top-slide-one {
     background-image: url(../img/bg-top-desktop-1@2x.jpg);
+  }
+}
+
+.top-slide-two {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-mobile-2.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-mobile-2.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .top-slide-two {
+    background-image: url(../img/bg-top-mobile-2@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-slide-two {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-tablet-2.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-tablet-2.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .top-slide-two {
+    background-image: url(../img/bg-top-tablet-2@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-slide-two {
+    background-size: cover;
+    background-image: url(../img/bg-top-desktop-2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .top-slide-two {
+    background-image: url(../img/bg-top-desktop-2@2x.jpg);
+  }
+}
+
+.top-slide-three {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-mobile-3.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-mobile-3.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .top-slide-three {
+    background-image: url(../img/bg-top-mobile-3@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-slide-three {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/bg-top-tablet-3.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/bg-top-tablet-3.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .top-slide-three {
+    background-image: url(../img/bg-top-tablet-3@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-slide-three {
+    background-size: cover;
+    background-image: url(../img/bg-top-desktop-3.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .top-slide-three {
+    background-image: url(../img/bg-top-desktop-3@2x.jpg);
   }
 }
 
@@ -1120,6 +1198,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .top-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-repeat: no-repeat;
     height: 680px;
     width: 609px;
@@ -1143,6 +1227,19 @@ img {
     background-position: center;
     background-size: cover;
     width: 1125px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-right-info {
+    display: block;
+    margin-right: 132px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-right-info {
+    margin-right: 452px;
   }
 }
 
@@ -1170,6 +1267,42 @@ img {
     letter-spacing: 0.05em;
     color: var(--color-white);
   }
+}
+
+.slider-navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.slider-navigation .slider-item {
+  height: 2px;
+  background-color: var(--second-text-color);
+}
+
+.slider-navigation .slider-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.slider-navigation .slider-item.slider-nav-one {
+  width: 18px;
+}
+
+.slider-navigation .slider-item.slider-nav-two, .slider-navigation .slider-item.slider-nav-three {
+  width: 8px;
 }
 
 .about .container {
