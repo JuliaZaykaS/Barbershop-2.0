@@ -1282,8 +1282,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 24px;
-  -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-      flex-basis: calc((100% - 2 * 30px) / 2);
+  -ms-flex-preferred-size: calc((100% - 2 * var(--margin-m)) / 2);
+      flex-basis: calc((100% - 2 * var(--margin-m)) / 2);
   height: 133px;
   background-color: var(--second-background-color);
 }
@@ -1709,7 +1709,6 @@ img {
 .copyright {
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
   color: var(--second-text-color);
   padding-top: 79px;
 }

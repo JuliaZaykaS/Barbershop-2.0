@@ -23,7 +23,7 @@
   align-items: center;
   padding: 20px 24px;
 
-  flex-basis: calc((100% - 2 * 30px) / 2);
+  flex-basis: calc((100% - 2 * var(--margin-m)) / 2);
 
   height: 133px;
   background-color: var(--second-background-color);
@@ -42,8 +42,6 @@
 
 .statistic-number {
   position: relative;
-  // font-family: var(--main-font-family);
-  // font-style: normal;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.38;
@@ -56,18 +54,13 @@
 .statistic-more {
   position: absolute;
   top: 5px;
-  // font-family: var(--main-font-family);
-  // font-style: normal;
-  // font-weight: 600;
+
   font-size: 16px;
   line-height: 1.38;
   color: var(--accent-color);
 }
 
 .statistic-description {
-  // font-family: var(--main-font-family);
-  // font-style: normal;
-  // font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
