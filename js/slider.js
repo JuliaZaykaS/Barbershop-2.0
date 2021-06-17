@@ -6,7 +6,8 @@ const sliderNavEl = document.querySelector('.slider-navigation');
 console.log(sliderNavEl);
 
 sliderNavEl.addEventListener('click', onSliderNavClick);
-let currentClass = 'top-slide-one';
+// let currentClass = 'top-slide-one';
+let currentClass = '';
 
 const sliderClasses = ['top-slide-one', 'top-slide-two', 'top-slide-three'];
 
@@ -17,6 +18,27 @@ function getIndex(array) {
 }
 
 function changeClass() {
+  sliderClasses.forEach((elem,index) => {
+    sectionTopEl.classList.add(elem);
+    // sectionTopEl.classList.remove(elem[index-1])
+})
+  // for (let i = 0; i < sliderClasses.length; i+=1) {
+  //   if ( i + 1 > sliderClasses.length-1) {
+  //     currentClass = sliderClasses[0];
+  //     sectionTopEl.classList.add(currentClass);
+  //     sectionTopEl.classList.remove(sliderClasses[sliderClasses.length - 1]);
+
+  //   } else {
+  //     currentClass = sliderClasses[i];
+  //   sectionTopEl.classList.add(sliderClasses[i]);
+  //   sectionTopEl.classList.remove(sliderClasses[i - 1]);
+
+  //   }
+  // }
+  // let index = sliderClasses.indexOf()
+
+
+
 
 }
 
@@ -42,4 +64,12 @@ function onSliderNavClick() {
 //         }
 // });
 
+}
+
+window.addEventListener('DOMContentLoaded', onChangeSliderImgAuto)
+
+function onChangeSliderImgAuto() {
+  setInterval(() => {
+    changeClass()
+  }, 5000)
 }
