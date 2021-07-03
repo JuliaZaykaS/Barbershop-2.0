@@ -14,6 +14,7 @@
   --second-text-color: var(--color-grey);
   --background-color: var(--color-second-black);
   --second-background-color: var(--color-light-grey);
+  --text-grey-transparent-color: var(--color-transparent-grey);
   --main-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
   /* Анимация */
@@ -339,11 +340,11 @@ img {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--text-grey-transparent-color);
 }
 
 .subtitle-light::before {
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: var(--text-grey-transparent-color);
 }
 
 .subtitle-white {
@@ -1303,6 +1304,40 @@ img {
 
 .slider-navigation .slider-item.slider-nav-two, .slider-navigation .slider-item.slider-nav-three {
   width: 8px;
+}
+
+.nav-left-right {
+  margin-bottom: 40px;
+  margin-right: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--text-grey-transparent-color);
+}
+
+.nav-left-right .nav-left {
+  margin-right: 61px;
+}
+
+.nav-left-right .nav-left::after,
+.nav-left-right .nav-right::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: var(--text-grey-transparent-color);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.nav-left-right-active {
+  color: var(--color-white);
 }
 
 .about .container {

@@ -9,9 +9,9 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--text-grey-transparent-color);
   &::before {
-    background-color: rgba(157, 164, 189, 0.6);
+    background-color: var(--text-grey-transparent-color);
   }
 }
 

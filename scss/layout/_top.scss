@@ -223,6 +223,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    // margin-bottom: 261px;
   }
   // margin-left: auto;
   // text-align: end;
@@ -241,4 +242,34 @@
       width: 8px;
     }
   }
+}
+
+.nav-left-right {
+  margin-bottom: 40px;
+  margin-right: 49px;
+  display: flex;
+  align-items: flex-end;
+
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--text-grey-transparent-color);
+
+  .nav-left {
+    margin-right: 61px;
+  }
+  .nav-left::after,
+  .nav-right::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+
+    background-color: var(--text-grey-transparent-color);
+    transform: rotate(90deg);
+  }
+}
+
+.nav-left-right-active {
+  color: var(--color-white);
 }
