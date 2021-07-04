@@ -149,7 +149,7 @@
 .top-right {
   padding-top: 215px;
 
-  padding-bottom: 183px;
+  // padding-bottom: 183px;
   padding-left: 0;
   @media screen and (min-width: $mobile) {
     width: 306px;
@@ -157,7 +157,7 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 
     background-repeat: no-repeat;
@@ -165,16 +165,16 @@
     height: 680px;
 
     width: 609px;
-    flex-grow: 1;
+    // flex-grow: 1;
     padding-top: 272px;
 
     padding-left: 120px;
   }
   @media screen and (min-width: $desktop) {
-    flex-grow: 1;
+    // flex-grow: 1;
     padding-top: 272px;
-    padding-right: 525px;
-    padding-bottom: 206px;
+    // padding-right: 525px;
+    // padding-bottom: 206px;
     padding-left: 100px;
 
     background-position: center;
@@ -183,13 +183,27 @@
   }
 }
 
+.top-right-info-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .top-right-info {
+  padding-bottom: 183px;
   @media screen and (min-width: $tablet) {
     display: block;
-    margin-right: 132px;
+    // display: flex;
+    // margin-right: 132px;
+    // margin-right: 77px;
+    // padding-bottom: 245px;
+    padding-bottom: 206px;
+    // margin-right: auto;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: 452px;
+    // margin-right: 452px;
+    // margin-right: 324px;
+    // padding-bottom: 206px;
   }
 }
 
@@ -217,13 +231,26 @@
   }
 }
 
+.top-slider {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 53px;
+
+    // align-items: stretch;
+  }
+}
+
 .slider-navigation {
   display: none;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    // margin-left: auto;
     // margin-bottom: 261px;
+    // margin-bottom: auto;
   }
   // margin-left: auto;
   // text-align: end;
@@ -246,9 +273,10 @@
 
 .nav-left-right {
   margin-bottom: 40px;
-  margin-right: 49px;
+  // margin-right: 49px;
   display: flex;
-  align-items: flex-end;
+  // align-items: flex-end;
+  text-align: end;
 
   font-size: 11px;
   line-height: 1.36;
@@ -258,15 +286,20 @@
   .nav-left {
     margin-right: 61px;
   }
+
   .nav-left::after,
   .nav-right::after {
+    // .nav-left::before,
+    // .nav-right::before {
     content: "";
     display: block;
-    width: 1px;
-    height: 60px;
+    width: 60px;
+    height: 1px;
+    margin-top: 8px;
+    // bottom: 0;
+    // right: 0;
 
     background-color: var(--text-grey-transparent-color);
-    transform: rotate(90deg);
   }
 }
 
