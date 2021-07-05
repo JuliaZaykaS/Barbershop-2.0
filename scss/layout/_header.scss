@@ -6,7 +6,7 @@
   padding-bottom: 40px;
   @media screen and (min-width: $tablet) {
     top: 0;
-    left: 25px;
+    // left: 25px;
     transition: translate (-50%, 0);
   }
 }
@@ -228,6 +228,7 @@
   @media screen and (min-width: $tablet) {
     width: 69px;
     margin-right: var(--margin-l);
+    margin-left: 11px;
     align-self: flex-start;
   }
 }
